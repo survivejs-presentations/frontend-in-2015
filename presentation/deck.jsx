@@ -78,7 +78,7 @@ export default class extends React.Component {
           </BlockQuote>
         </Slide>
         <Slide transition={["zoom", "fade"]} bgColor="primary">
-          <Heading caps fit>Choose Your Side</Heading>
+          <Heading caps fit>Pick your poison</Heading>
           <Layout>
             <Fill>
               <Heading size={4} caps textColor="secondary" bgColor="white" margin={10}>
@@ -89,6 +89,32 @@ export default class extends React.Component {
               <Heading size={4} caps textColor="secondary" bgColor="white" margin={10}>
                 Libraries
               </Heading>
+            </Fill>
+          </Layout>
+        </Slide>
+        <Slide transition={["zoom", "fade"]} bgColor="primary">
+          <Layout>
+            <Fill>
+              <Heading size={4} caps textColor="secondary" bgColor="white" margin={10}>
+                Frameworks
+              </Heading>
+              <List>
+                <ListItem><Appear fid="1">Solves a lot out of box</Appear></ListItem>
+                <ListItem><Appear fid="2">Great esp. for prototyping/small/medium apps</Appear></ListItem>
+                <ListItem><Appear fid="3">Comes with limits</Appear></ListItem>
+                <ListItem><Appear fid="4">What about evolution?</Appear></ListItem>
+              </List>
+            </Fill>
+            <Fill>
+              <Heading size={4} caps textColor="secondary" bgColor="white" margin={10}>
+                Libraries
+              </Heading>
+              <List>
+                <ListItem><Appear fid="5">Solves some specific problem</Appear></ListItem>
+                <ListItem><Appear fid="6">Great for evolving apps</Appear></ListItem>
+                <ListItem><Appear fid="7">Limited by architectural skill</Appear></ListItem>
+                <ListItem><Appear fid="8">Replace library at a time as they become obsolete</Appear></ListItem>
+              </List>
             </Fill>
           </Layout>
         </Slide>
