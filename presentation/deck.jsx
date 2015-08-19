@@ -98,8 +98,8 @@ export default class extends React.Component {
           <Heading caps fit size={1} textColor="tertiary">
             Frameworks
           </Heading>
-          <Heading caps fit size={1} textColor="secondary">
-            Golden cages
+          <Heading caps size={2} textColor="secondary">
+            Swiss knives
           </Heading>
         </Slide>
         <Slide transition={["slide"]} bgImage={images.city.replace("/", "")} bgDarken={0.75}>
@@ -165,8 +165,8 @@ export default class extends React.Component {
           <Heading caps fit size={1} textColor="tertiary">
             Libraries
           </Heading>
-          <Heading caps fit size={1} textColor="secondary">
-            Anti-cages
+          <Heading caps size={2} textColor="secondary">
+            For specific problems
           </Heading>
         </Slide>
         <Slide transition={["slide"]} bgImage={images.city.replace("/", "")} bgDarken={0.75}>
