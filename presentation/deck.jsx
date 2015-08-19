@@ -7,8 +7,6 @@ import {
 
 import preloader from "../src/utils/preloader";
 
-import Interactive from "./interactive";
-
 const images = {
   city: require("./city.jpg"),
 };
