@@ -139,8 +139,8 @@ module.exports = function(data) {
           '<head>',
             '<meta charset="utf-8"/>',
             '<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>',
-            '<link href="http://fonts.googleapis.com/css?family=Lobster+Two:400,700" rel="stylesheet" type="text/css">',
-            '<link href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet" type="text/css">',
+            '<link href="https://fonts.googleapis.com/css?family=Lobster+Two:400,700" rel="stylesheet" type="text/css">',
+            '<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" rel="stylesheet" type="text/css">',
             '<link href="' + data.css + '" rel="stylesheet" type="text/css" />', // <-- Don't remove this
           '</head>',
           '<body>',
