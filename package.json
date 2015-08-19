@@ -7,12 +7,13 @@
     "start": "webpack-dev-server",
     "lint": "eslint --ext .js,.jsx src",
     "build": "webpack",
-    "deploy": "npm run build && surge -p ./dist"
+    "deploy": "npm run build && node ./src/deploy_gh_pages.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "alt": "^0.16.10",
+    "gh-pages": "^0.3.1",
     "highlight.js": "^8.6.0",
     "hjs-webpack": "^2.8.1",
     "lodash": "^3.9.3",
@@ -41,7 +42,6 @@
     "node-libs-browser": "^0.5.2",
     "raw-loader": "^0.5.1",
     "react-hot-loader": "^1.2.7",
-    "surge": "latest",
     "url-loader": "^0.5.6",
     "webpack": "^1.10.0",
     "webpack-dev-server": "^1.10.0"
