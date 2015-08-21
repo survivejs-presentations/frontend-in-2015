@@ -1,1 +1,10 @@
-meteor
+<section id="main">
+  <input id="toggle-all" type="checkbox"
+    {{#unless todos_not_completed}}checked="checked"{{/unless}}>
+  <label for="toggle-all">Mark all as complete</label>
+  <ul id="todo-list">
+    {{#each todos}}
+      {{> todo}}
+    {{/each}}
+  </ul>
+</section>

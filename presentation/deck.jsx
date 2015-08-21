@@ -163,32 +163,47 @@ export default class extends React.Component {
           </Appear>
         </Slide>
         <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+          <Heading caps size={1} textColor="tertiary">
+            AngularJS
+          </Heading>
           <CodePane
-            lang="javascript"
+            lang="html"
             source={require("raw!./examples/angular.example")}
             margin="20px auto"/>
         </Slide>
         <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+          <Heading caps size={1} textColor="tertiary">
+            Ember.js
+          </Heading>
           <CodePane
-            lang="javascript"
+            lang="handlebars"
             source={require("raw!./examples/ember.example")}
             margin="20px auto"/>
         </Slide>
         <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+          <Heading caps size={1} textColor="tertiary">
+            Backbone.js
+          </Heading>
           <CodePane
-            lang="javascript"
+            lang="html"
             source={require("raw!./examples/backbone.example")}
             margin="20px auto"/>
         </Slide>
         <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+          <Heading caps size={1} textColor="tertiary">
+            Knockout.js
+          </Heading>
           <CodePane
-            lang="javascript"
+            lang="html"
             source={require("raw!./examples/knockout.example")}
             margin="20px auto"/>
         </Slide>
         <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+          <Heading caps size={1} textColor="tertiary">
+            Meteor
+          </Heading>
           <CodePane
-            lang="javascript"
+            lang="html"
             source={require("raw!./examples/meteor.example")}
             margin="20px auto"/>
         </Slide>

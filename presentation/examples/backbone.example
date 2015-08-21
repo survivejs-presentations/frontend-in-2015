@@ -1,1 +1,7 @@
-backbone
+<section id="main">
+  <input id="toggle-all" type="checkbox">
+  <label for="toggle-all">Mark all as complete</label>
+  <ul id="todo-list"></ul>
+</section>
+
+// bindings at JavaScript side!
