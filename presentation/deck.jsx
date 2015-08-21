@@ -299,101 +299,46 @@ export default class extends React.Component {
             margin="20px auto"/>
         </Slide>
 
-        {/* tools */}
+        {/* build tools */}
         <Slide transition={["slide", "spin"]} bgColor="primary">
           <Heading caps fit size={1} textColor="tertiary">
-            Tools
+            Build Tools
           </Heading>
           <Heading caps size={2} textColor="secondary">
             Hard to live without
           </Heading>
         </Slide>
-        <Slide transition={["slide"]} bgImage={images.city.replace("/", "")} bgDarken={0.75}>
-          <Appear fid="1">
-            <Heading size={2} caps textColor="primary">
-              Make
-            </Heading>
-          </Appear>
-          <Appear fid="2">
-            <Heading size={2} caps textColor="tertiary">
-              Grunt
-            </Heading>
-          </Appear>
-          <Appear fid="3">
-            <Heading size={2} caps textColor="primary">
-              Gulp
-            </Heading>
-          </Appear>
-          <Appear fid="4">
-            <Heading size={2} caps textColor="tertiary">
-              Browserify
-            </Heading>
-          </Appear>
-          <Appear fid="5">
-            <Heading size={2} caps textColor="primary">
-              Webpack
-            </Heading>
-          </Appear>
-          <Appear fid="6">
-            <Heading size={2} caps textColor="tertiary">
-              JSPM
-            </Heading>
-          </Appear>
-        </Slide>
-        <Slide transition={["slide", "spin"]} bgColor="primary">
-          <Heading caps fit size={1} textColor="tertiary">
-            Make
-          </Heading>
-        </Slide>
-        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
-          <List>
-            <ListItem><Appear fid="1">TODO</Appear></ListItem>
-          </List>
-        </Slide>
-        <Slide transition={["slide", "spin"]} bgColor="primary">
-          <Heading caps fit size={1} textColor="tertiary">
-            Grunt
-          </Heading>
-        </Slide>
-        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
-          <List>
-            <ListItem><Appear fid="1">TODO</Appear></ListItem>
-          </List>
-        </Slide>
-        <Slide transition={["slide", "spin"]} bgColor="primary">
-          <Heading caps fit size={1} textColor="tertiary">
-            Gulp
-          </Heading>
-        </Slide>
-        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
-          <List>
-            <ListItem><Appear fid="1">TODO</Appear></ListItem>
-          </List>
-        </Slide>
-        <Slide transition={["slide", "spin"]} bgColor="primary">
-          <Heading caps fit size={1} textColor="tertiary">
-            Browserify
-          </Heading>
-        </Slide>
-        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
-          <List>
-            <ListItem><Appear fid="1">TODO</Appear></ListItem>
-          </List>
-        </Slide>
-        <Slide transition={["slide", "spin"]} bgColor="primary">
-          <Heading caps fit size={1} textColor="tertiary">
-            Webpack
-          </Heading>
-        </Slide>
-        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
-          <List>
-            <ListItem><Appear fid="1">TODO</Appear></ListItem>
-          </List>
-        </Slide>
-        <Slide transition={["slide", "spin"]} bgColor="primary">
-          <Heading caps fit size={1} textColor="tertiary">
-            JSPM
-          </Heading>
+        <Slide transition={["zoom", "fade"]} bgColor="primary">
+          <Layout>
+            <Fill>
+              <Heading size={4} caps textColor="secondary" bgColor="white" margin={10}>
+                1st Gen.
+              </Heading>
+              <List>
+                <ListItem><Appear fid="1">Make</Appear></ListItem>
+              </List>
+            </Fill>
+            <Fill>
+              <Heading size={4} caps textColor="secondary" bgColor="white" margin={10}>
+                2nd Gen.
+              </Heading>
+              <List>
+                <ListItem><Appear fid="2">Grunt</Appear></ListItem>
+                <ListItem><Appear fid="3">Gulp</Appear></ListItem>
+                <ListItem><Appear fid="4">Broccoli</Appear></ListItem>
+              </List>
+            </Fill>
+            <Fill>
+              <Heading size={4} caps textColor="secondary" bgColor="white" margin={10}>
+                3rd Gen.
+              </Heading>
+              <List>
+                <ListItem><Appear fid="5">Browserify</Appear></ListItem>
+                <ListItem><Appear fid="6">Webpack</Appear></ListItem>
+                <ListItem><Appear fid="7">JSPM</Appear></ListItem>
+              </List>
+            </Fill>
+          </Layout>
         </Slide>
         <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
           <List>
