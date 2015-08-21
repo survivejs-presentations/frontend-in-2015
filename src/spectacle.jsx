@@ -16,6 +16,10 @@ import Quote from "./quote";
 import S from "./s";
 import Slide from "./slide";
 import Text from "./text";
+import Table from "./table";
+import TableRow from "./table-row";
+import TableItem from "./table-item";
+import TableHeaderItem from "./table-header-item";
 
 export {
   Appear,
@@ -35,5 +39,9 @@ export {
   Quote,
   S,
   Slide,
-  Text
+  Text,
+  Table,
+  TableRow,
+  TableItem,
+  TableHeaderItem
 };

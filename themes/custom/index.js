@@ -219,6 +219,16 @@ module.exports = {
       listStylePosition: "inside",
       padding: 0
     },
+    tableHeaderItem: {
+      fontSize: "2.66em",
+      fontWeight: "bold"
+    },
+    tableItem: {
+      fontSize: "2.66em"
+    },
+    table: {
+      width: "100%"
+    },
     s: {
       strikethrough: {}
     },
