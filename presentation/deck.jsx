@@ -50,6 +50,12 @@ export default class extends React.Component {
             </Heading>
           </Appear>
         </Slide>
+        <Slide transition={["slide"]} bgColor="black">
+          <BlockQuote>
+            <Quote>Always bet on JS!</Quote>
+            <Cite>Brendan Eich</Cite>
+          </BlockQuote>
+        </Slide>
         <Slide transition={["slide"]} bgImage={images.city.replace("/", "")} bgDarken={0.75}>
           <Appear fid="1">
             <Heading size={2} caps fit textColor="primary">
