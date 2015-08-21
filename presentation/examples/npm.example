@@ -1,0 +1,20 @@
+{
+  "name": "react-component-boilerplate",
+  "description": "Boilerplate for React.js components",
+  "author": "Juho Vepsalainen",
+  "user": "survivejs",
+  "version": "0.6.0",
+  "scripts": {
+    "start": "node lib/dev_server.js",
+    "test": "jest && npm run lint",
+    "gh-pages": "webpack --colors",
+    "deploy-gh-pages": "node ./lib/deploy_gh_pages.js",
+    "dist-all": "npm run dist && npm run dist-min",
+    "dist": "webpack --colors",
+    ...
+  },
+  "main": "dist-modules/index.js",
+  "dependencies": {...},
+  "devDependencies": {...},
+  ...
+}
