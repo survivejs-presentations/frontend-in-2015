@@ -1,0 +1,22 @@
+function vrenderMainSection(todosData) {
+  let allCompleted = todosData.list.reduce((x, y) => x && y.completed, true);
+  return h('section#main', {
+    style: {'display': todosData.list.length ? '' : 'none'}
+  }, [
+    h('input#toggle-all', {
+      type: 'checkbox',
+      checked: allCompleted
+    }),
+    h('ul#todo-list', todosData.list
+      .filter(todosData.filterFn)
+      .map(todoData =>
+        h('todo-item.todo-item', {
+          key: todoData.id,
+          todoid: todoData.id,
+          content: todoData.title,
+          completed: todoData.completed
+        })
+      )
+    )
+  ])
+}
