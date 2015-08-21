@@ -423,11 +423,11 @@ export default class extends React.Component {
             Version per year
           </Heading>
         </Slide>
-        <Slide transition={["zoom", "fade"]} bgColor="primary" bgImage={images.babel.replace("/", "")} bgDarken={0.75}>
+        <Slide transition={["zoom", "fade"]} bgColor="secondary">
           <Heading caps >Babel</Heading>
           <Heading caps size={2} textColor="primary">The Future Now</Heading>
         </Slide>
-        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
+        <Slide transition={["fade"]} bgColor="secondary" textColor="primary" bgImage={images.babel.replace("/", "")} bgDarken={0.75}>
           <List>
             <ListItem><Appear fid="1">JavaScript compiler</Appear></ListItem>
             <ListItem><Appear fid="2">JSX support out of box</Appear></ListItem>
