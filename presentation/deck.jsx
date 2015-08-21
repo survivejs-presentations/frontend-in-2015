@@ -230,7 +230,7 @@ export default class extends React.Component {
           </Appear>
           <Appear fid="3">
             <Heading size={2} caps textColor="primary">
-              Riot.js
+              Ractive.js
             </Heading>
           </Appear>
           <Appear fid="4">
@@ -240,21 +240,30 @@ export default class extends React.Component {
           </Appear>
         </Slide>
         <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+          <Heading caps size={1} textColor="tertiary">
+            React.js
+          </Heading>
           <CodePane
-            lang="javascript"
+            lang="html"
             source={require("raw!./examples/react.example")}
             margin="20px auto"/>
         </Slide>
         <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+          <Heading caps size={1} textColor="tertiary">
+            Vue.js
+          </Heading>
           <CodePane
-            lang="javascript"
+            lang="html"
             source={require("raw!./examples/vue.example")}
             margin="20px auto"/>
         </Slide>
         <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+          <Heading caps size={1} textColor="tertiary">
+            Ractive.js
+          </Heading>
           <CodePane
-            lang="javascript"
-            source={require("raw!./examples/riot.example")}
+            lang="html"
+            source={require("raw!./examples/ractive.example")}
             margin="20px auto"/>
         </Slide>
 

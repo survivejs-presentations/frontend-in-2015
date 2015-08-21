@@ -1,1 +1,17 @@
-vue
+<section class="main" v-show="todos.length" v-cloak>
+  <input class="toggle-all" type="checkbox" v-model="allDone">
+  <ul class="todo-list">
+    <li class="todo" v-repeat="todo: filteredTodos"
+      v-class="completed: todo.completed, editing: todo == editedTodo">
+      <div class="view">
+        <input class="toggle" type="checkbox" v-model="todo.completed">
+        <label v-on="dblclick: editTodo(todo)">{{todo.title}}</label>
+        <button class="destroy" v-on="click: removeTodo(todo)"></button>
+      </div>
+      <input class="edit" type="text" v-model="todo.title"
+        v-todo-focus="todo == editedTodo"
+        v-on="blur: doneEdit(todo), keyup: doneEdit(todo) | key 'enter',
+          keyup: cancelEdit(todo) | key 'esc'">
+    </li>
+  </ul>
+</section>

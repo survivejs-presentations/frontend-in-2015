@@ -1,1 +1,13 @@
-react
+// app.jsx
+
+<section className="main">
+  <input
+    className="toggle-all"
+    type="checkbox"
+    onChange={this.toggleAll}
+    checked={activeTodoCount === 0}
+  />
+  <ul className="todo-list">
+    {todoItems}
+  </ul>
+</section>
