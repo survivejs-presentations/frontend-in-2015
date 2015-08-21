@@ -11,6 +11,8 @@ const images = {
   city: require("./city.jpg"),
   cheese: require("./cheese.jpg"),
   boxing: require("./boxing.jpg"),
+  babel: require("./babel.jpg"),
+  lint: require("./lint.jpg"),
 };
 
 preloader([images.city, images.cheese]);
@@ -384,6 +386,56 @@ export default class extends React.Component {
               </List>
             </Fill>
           </Layout>
+        </Slide>
+
+        {/* css processors */}
+        <Slide transition={["slide", "spin"]} bgColor="primary">
+          <Heading caps fit size={1} textColor="tertiary">
+            CSS Processors
+          </Heading>
+          <Heading caps size={2} textColor="secondary">
+            Because Vanilla Isn't Enough
+          </Heading>
+        </Slide>
+
+        {/* javascript */}
+        <Slide transition={["slide", "spin"]} bgColor="primary">
+          <Heading caps fit size={1} textColor="tertiary">
+            ES2015, ES2016, ...
+          </Heading>
+          <Heading caps size={2} textColor="secondary">
+            Version per year
+          </Heading>
+        </Slide>
+        <Slide transition={["zoom", "fade"]} bgColor="primary" bgImage={images.babel.replace("/", "")} bgDarken={0.75}>
+          <Heading caps >Babel</Heading>
+          <Heading caps size={2} textColor="primary">The Future Now</Heading>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
+          <List>
+            <ListItem><Appear fid="1">JavaScript compiler</Appear></ListItem>
+            <ListItem><Appear fid="2">JSX support out of box</Appear></ListItem>
+            <ListItem><Appear fid="2">Easy to setup</Appear></ListItem>
+            <ListItem><Appear fid="3">See also Google Traceur</Appear></ListItem>
+          </List>
+        </Slide>
+
+        {/* linting */}
+        <Slide transition={["slide", "spin"]} bgColor="primary">
+          <Heading caps fit size={1} textColor="tertiary">
+            Linting
+          </Heading>
+          <Heading caps size={2} textColor="secondary">
+            To keep bugs at bay
+          </Heading>
+        </Slide>
+        <Slide transition={["zoom", "fade"]} bgColor="primary" bgImage={images.lint.replace("/", "")} bgDarken={0.75}>
+          <Heading caps >ESLint</Heading>
+          <Heading caps size={2} textColor="primary">Pluggable linting for JavaScript</Heading>
+        </Slide>
+        <Slide transition={["zoom", "fade"]} bgColor="primary" bgImage={images.lint.replace("/", "")} bgDarken={0.75}>
+          <Heading caps >csslint</Heading>
+          <Heading caps size={2} textColor="primary">Similar for CSS</Heading>
         </Slide>
 
         {/* testing */}
