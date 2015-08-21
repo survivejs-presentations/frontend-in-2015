@@ -9,9 +9,10 @@ import preloader from "../src/utils/preloader";
 
 const images = {
   city: require("./city.jpg"),
+  cheese: require("./cheese.jpg"),
 };
 
-preloader([images.city]);
+preloader([images.city, images.cheese]);
 
 export default class extends React.Component {
   render() {
@@ -77,7 +78,7 @@ export default class extends React.Component {
             <Cite>Aza Raskin</Cite>
           </BlockQuote>
         </Slide>
-        <Slide transition={["zoom", "fade"]} bgColor="primary">
+        <Slide transition={["zoom", "fade"]} bgColor="primary" bgImage={images.cheese.replace("/", "")} bgDarken={0.75}>
           <Heading caps fit>Pick your poison</Heading>
           <Layout>
             <Fill>
