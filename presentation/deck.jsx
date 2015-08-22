@@ -16,6 +16,7 @@ const images = {
   lint: require("./images/lint.jpg"),
   style: require("./images/style.jpg"),
   jobs: require("./images/jobs.png"),
+  redmonk: require("./images/redmonk.png"),
 };
 
 preloader([images.city, images.cheese]);
@@ -104,6 +105,13 @@ export default class extends React.Component {
             <Text>
               <Link href="http://w3techs.com/technologies/history_overview/javascript_library/all/y">W3Techs</Link>
             </Text>
+          </Layout>
+        </Slide>
+        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+          <Layout>
+            <Link href="http://redmonk.com/jgovernor/2015/07/31/programming-language-rankings-summer-2015/">
+              <Image src={images.redmonk.replace("/", "")} />
+            </Link>
           </Layout>
         </Slide>
         <Slide transition={["slide"]} bgImage={images.city.replace("/", "")} bgDarken={0.75}>
