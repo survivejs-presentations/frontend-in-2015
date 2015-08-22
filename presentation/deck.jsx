@@ -61,6 +61,50 @@ export default class extends React.Component {
             <Cite>Brendan Eich</Cite>
           </BlockQuote>
         </Slide>
+        <Slide transition={["slide"]} bgColor="primary">
+          <Heading size={4} caps textColor="secondary" bgColor="white" margin={10}>
+            JavaScript Usage
+          </Heading>
+          <Layout>
+            <Table>
+              <TableRow>
+                <TableHeaderItem></TableHeaderItem>
+                <TableHeaderItem>2011</TableHeaderItem>
+                <TableHeaderItem>2013</TableHeaderItem>
+                <TableHeaderItem>2015</TableHeaderItem>
+              </TableRow>
+              <TableRow>
+                <TableItem>None</TableItem>
+                <TableItem>61.8%</TableItem>
+                <TableItem>39.6%</TableItem>
+                <TableItem>35.0%</TableItem>
+              </TableRow>
+              <TableRow>
+                <TableItem>jQuery</TableItem>
+                <TableItem>28.3%</TableItem>
+                <TableItem>54.5%</TableItem>
+                <TableItem>61.5%</TableItem>
+              </TableRow>
+              <TableRow>
+                <TableItem>Modernizr</TableItem>
+                <TableItem></TableItem>
+                <TableItem></TableItem>
+                <TableItem>7.2%</TableItem>
+              </TableRow>
+              <TableRow>
+                <TableItem>Bootstrap</TableItem>
+                <TableItem></TableItem>
+                <TableItem></TableItem>
+                <TableItem>5.9%</TableItem>
+              </TableRow>
+            </Table>
+          </Layout>
+          <Layout>
+            <Text>
+              <Link href="http://w3techs.com/technologies/history_overview/javascript_library/all/y">W3Techs</Link>
+            </Text>
+          </Layout>
+        </Slide>
         <Slide transition={["slide"]} bgImage={images.city.replace("/", "")} bgDarken={0.75}>
           <Appear fid="1">
             <Heading size={2} caps fit textColor="primary">
