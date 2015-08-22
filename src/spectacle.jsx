@@ -15,6 +15,7 @@ import List from "./list";
 import Quote from "./quote";
 import S from "./s";
 import Slide from "./slide";
+import SlideSet from "./slide_set";
 import Text from "./text";
 import Table from "./table";
 import TableRow from "./table-row";
@@ -39,6 +40,7 @@ export {
   Quote,
   S,
   Slide,
+  SlideSet,
   Text,
   Table,
   TableRow,
