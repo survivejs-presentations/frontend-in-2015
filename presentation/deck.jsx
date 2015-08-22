@@ -17,6 +17,7 @@ const images = {
   style: require("./images/style.jpg"),
   jobs: require("./images/jobs.png"),
   redmonk: require("./images/redmonk.png"),
+  moduleCounts: require("./images/module_counts.png"),
 };
 
 preloader([images.city, images.cheese]);
@@ -390,20 +391,29 @@ export default class extends React.Component {
           </Layout>
         </Slide>
 
-        {/* package managers */}
+        {/* npm */}
         <Slide transition={["slide", "spin"]} bgColor="primary">
-          <Heading caps fit size={1} textColor="tertiary">
-            Package Managers
+          <Heading fit size={1} textColor="tertiary">
+            npm
           </Heading>
           <Heading caps size={2} textColor="secondary">
-            To keep things together
+            For keeping things together
           </Heading>
         </Slide>
-        <Slide transition={["zoom", "fade"]} bgColor="primary" bgImage={images.boxing.replace("/", "")} bgDarken={0.75}>
-          <Heading caps >NPM</Heading>
-          <Heading caps size={2} textColor="primary">Wins</Heading>
+        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+          <Heading size={1} textColor="tertiary">
+            Module Counts
+          </Heading>
+          <Layout>
+            <Image src={images.moduleCounts.replace("/", "")} padding="20px" />
+          </Layout>
+          <Layout>
+            <Text>
+              <Link href="http://www.modulecounts.com/">modulecounts.com</Link>
+            </Text>
+          </Layout>
         </Slide>
-        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
+        <Slide transition={["fade"]} textColor="primary" bgImage={images.boxing.replace("/", "")} bgDarken={0.75}>
           <List>
             <ListItem><Appear fid="1">176k+ packages and growing fast</Appear></ListItem>
             <ListItem><Appear fid="2">Dependency management</Appear></ListItem>
