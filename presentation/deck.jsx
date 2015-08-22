@@ -14,7 +14,8 @@ const images = {
   boxing: require("./images/boxing.jpg"),
   babel: require("./images/babel.jpg"),
   lint: require("./images/lint.jpg"),
-  style: require("./images/style.jpg")
+  style: require("./images/style.jpg"),
+  jobs: require("./images/jobs.png"),
 };
 
 preloader([images.city, images.cheese]);
@@ -363,6 +364,21 @@ export default class extends React.Component {
                 <TableItem>Reactive newcomer</TableItem>
               </TableRow>
             </Table>
+          </Layout>
+        </Slide>
+
+        {/* jobs (usage) */}
+        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+          <Heading size={1} textColor="tertiary">
+            Job Trends
+          </Heading>
+          <Layout>
+            <Image src={images.jobs.replace("/", "")} padding="20px" />
+          </Layout>
+          <Layout>
+            <Text>
+              <Link href="http://www.indeed.com/jobtrends?q=Angularjs%2C+React.js%2C+Knockout%2C+Backbone.js&l=">Indeed</Link>
+            </Text>
           </Layout>
         </Slide>
 
