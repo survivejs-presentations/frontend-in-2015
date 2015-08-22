@@ -9,12 +9,12 @@ import {
 import preloader from "../src/utils/preloader";
 
 const images = {
-  city: require("./city.jpg"),
-  cheese: require("./cheese.jpg"),
-  boxing: require("./boxing.jpg"),
-  babel: require("./babel.jpg"),
-  lint: require("./lint.jpg"),
-  style: require("./style.jpg")
+  city: require("./images/city.jpg"),
+  cheese: require("./images/cheese.jpg"),
+  boxing: require("./images/boxing.jpg"),
+  babel: require("./images/babel.jpg"),
+  lint: require("./images/lint.jpg"),
+  style: require("./images/style.jpg")
 };
 
 preloader([images.city, images.cheese]);
