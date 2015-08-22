@@ -23,6 +23,7 @@ export default class extends React.Component {
   render() {
     return (
       <Deck transition={["zoom", "slide"]} transitionDuration={800}>
+        {/* intro */}
         <Slide transition={["zoom"]} bgColor="primary">
           <Heading size={1} fit caps textColor="black">
             Frontend
@@ -33,10 +34,9 @@ export default class extends React.Component {
           <Heading size={2} fit caps textColor="black">
             Clear the decks
           </Heading>
-{/*          <Link href="https://github.com/survivejs/frontend-in-2015">
+          <Link href="https://github.com/survivejs/frontend-in-2015">
             <Text bold caps textColor="tertiary">View on Github</Text>
           </Link>
-*/}
         </Slide>
         <Slide transition={["slide"]} bgImage={images.city.replace("/", "")} bgDarken={0.75}>
           <Appear fid="1">
