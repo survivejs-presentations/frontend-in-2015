@@ -304,12 +304,12 @@ export default class extends React.Component {
             </Heading>
           </Appear>
           <Appear fid="4">
-            <Heading size={2} caps textColor="primary">
+            <Heading size={2} caps textColor="tertiary">
               Cycle.js
             </Heading>
           </Appear>
           <Appear fid="5">
-            <Heading size={2} caps textColor="tertiary">
+            <Heading size={2} caps textColor="primary">
               + 100 000 more
             </Heading>
           </Appear>
