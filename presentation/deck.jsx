@@ -6,6 +6,8 @@ import {
   Table, TableRow, TableHeaderItem, TableItem
 } from "../src/spectacle";
 
+import Interactive from "./interactive.jsx";
+
 import preloader from "../src/utils/preloader";
 
 const images = {
@@ -309,6 +311,21 @@ export default class extends React.Component {
               + 100 000 more
             </Heading>
           </Appear>
+        </Slide>
+        <Slide transition={["slide"]} bgColor="primary">
+          <Heading size={1} caps fit textColor="tertiary">
+            Cat Counter in React.js
+          </Heading>
+          <Interactive/>
+        </Slide>
+        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+          <Heading caps size={1} textColor="tertiary">
+            Cat Code
+          </Heading>
+          <CodePane
+            lang="javascript"
+            source={require("raw!./examples/cat.example")}
+            margin="20px auto"/>
         </Slide>
         <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
           <Heading caps size={1} textColor="tertiary">
