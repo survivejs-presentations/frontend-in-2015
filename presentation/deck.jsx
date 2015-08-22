@@ -139,12 +139,6 @@ export default class extends React.Component {
             </Heading>
           </Appear>
         </Slide>
-        <Slide transition={["slide"]} bgColor="black">
-          <BlockQuote>
-            <Quote>Design is the beauty of turning constraints into advantages</Quote>
-            <Cite>Aza Raskin</Cite>
-          </BlockQuote>
-        </Slide>
         <Slide transition={["zoom", "fade"]} bgColor="primary" bgImage={images.cheese.replace("/", "")} bgDarken={0.75}>
           <Heading caps fit>Pick your poison</Heading>
           <Layout>
@@ -391,6 +385,14 @@ export default class extends React.Component {
               </TableRow>
             </Table>
           </Layout>
+        </Slide>
+
+        {/* interlude */}
+        <Slide transition={["slide"]} bgColor="black">
+          <BlockQuote>
+            <Quote>Design is the beauty of turning constraints into advantages</Quote>
+            <Cite>Aza Raskin</Cite>
+          </BlockQuote>
         </Slide>
 
         {/* jobs (usage) */}
