@@ -680,23 +680,23 @@ export default class extends React.Component {
             Because Vanilla Isn't Enough
           </Heading>
         </Slide>
-        <Slide transition={["zoom", "fade"]} bgColor="primary" bgImage={images.style.replace("/", "")} bgDarken={0.75}>
+        <Slide transition={["slide"]} bgColor="primary" bgImage={images.style.replace("/", "")} bgDarken={0.75}>
           <Heading caps >BEM, OOCSS, SMACSS</Heading>
           <Heading caps size={2} textColor="primary">Solving CSS within CSS</Heading>
         </Slide>
-        <Slide transition={["zoom", "fade"]} bgColor="primary" bgImage={images.style.replace("/", "")} bgDarken={0.75}>
+        <Slide transition={["slide"]} bgColor="primary" bgImage={images.style.replace("/", "")} bgDarken={0.75}>
           <Heading caps >SASS, Less, Stylus</Heading>
           <Heading caps size={2} textColor="primary">Better languages</Heading>
         </Slide>
-        <Slide transition={["zoom", "fade"]} bgColor="primary" bgImage={images.style.replace("/", "")} bgDarken={0.75}>
+        <Slide transition={["slide"]} bgColor="primary" bgImage={images.style.replace("/", "")} bgDarken={0.75}>
           <Heading caps >PostCSS, cssnext</Heading>
           <Heading caps size={2} textColor="primary">Extensions</Heading>
         </Slide>
-        <Slide transition={["zoom", "fade"]} bgColor="primary" bgImage={images.style.replace("/", "")} bgDarken={0.75}>
+        <Slide transition={["slide"]} bgColor="primary" bgImage={images.style.replace("/", "")} bgDarken={0.75}>
           <Heading caps >Inline CSS (React)</Heading>
           <Heading caps size={2} textColor="primary">Back to the future?</Heading>
         </Slide>
-        <Slide transition={["zoom", "fade"]} bgColor="primary" bgImage={images.style.replace("/", "")} bgDarken={0.75}>
+        <Slide transition={["slide"]} bgColor="primary" bgImage={images.style.replace("/", "")} bgDarken={0.75}>
           <Heading caps >CSS Modules</Heading>
           <Heading caps size={2} textColor="primary">Eliminates globals, modularity++</Heading>
         </Slide>
@@ -732,13 +732,13 @@ export default class extends React.Component {
             To keep bugs at bay
           </Heading>
         </Slide>
-        <Slide transition={["zoom", "fade"]} bgColor="primary" bgImage={images.lint.replace("/", "")} bgDarken={0.75}>
+        <Slide transition={["slide"]} bgColor="primary" bgImage={images.lint.replace("/", "")} bgDarken={0.75}>
           <Heading caps >ESLint</Heading>
           <Heading caps size={2} textColor="primary">Pluggable linting for JavaScript</Heading>
         </Slide>
-        <Slide transition={["zoom", "fade"]} bgColor="primary" bgImage={images.lint.replace("/", "")} bgDarken={0.75}>
+        <Slide transition={["slide"]} bgColor="primary" bgImage={images.lint.replace("/", "")} bgDarken={0.75}>
           <Heading caps >csslint</Heading>
-          <Heading caps size={2} textColor="primary">Similar for CSS</Heading>
+          <Heading caps size={2} textColor="primary">Rules for improving your CSS</Heading>
         </Slide>
 
         {/* testing */}
