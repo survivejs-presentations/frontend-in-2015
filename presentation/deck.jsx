@@ -442,7 +442,7 @@ export default class extends React.Component {
             <ListItem><Appear fid="1">176k+ packages and growing fast</Appear></ListItem>
             <ListItem><Appear fid="2">Dependency management</Appear></ListItem>
             <ListItem><Appear fid="3">Package authoring</Appear></ListItem>
-            <ListItem><Appear fid="4">Both front-end/back-end</Appear></ListItem>
+            <ListItem><Appear fid="4">Both frontend/backend</Appear></ListItem>
           </List>
         </Slide>
         <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
