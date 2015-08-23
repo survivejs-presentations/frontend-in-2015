@@ -807,7 +807,12 @@ export default class extends React.Component {
             <ListItem><Appear fid="1">TODO</Appear></ListItem>
           </List>
         </Slide>
-        <Slide transition={["spin", "slide"]} bgColor="tertiary">
+        <Slide transition={["slide", "spin"]} bgColor="primary">
+          <Heading caps fit size={1} textColor="tertiary">
+            Questions?
+          </Heading>
+        </Slide>
+        <Slide transition={["slide"]} bgColor="tertiary">
           <Heading size={1} caps fit textColor="primary">
             Made with love in Finland by
           </Heading>
@@ -817,17 +822,15 @@ export default class extends React.Component {
             </Heading>
           </Link>
         </Slide>
-        <Slide transition={["slide", "spin"]} bgColor="primary">
-          <Appear fid="1">
-            <Heading caps fit size={1} textColor="tertiary">
-              Questions?
+        <Slide transition={["slide"]} bgColor="tertiary">
+          <Heading size={1} caps fit textColor="primary">
+            Read my book
+          </Heading>
+          <Link href="http://survivejs.com/">
+            <Heading caps fit size={2} textColor="secondary">
+              SurviveJS - Webpack and React
             </Heading>
-          </Appear>
-          <Appear fid="2">
-            <Heading caps size={2} textColor="secondary">
-              Nope
-            </Heading>
-          </Appear>
+          </Link>
         </Slide>
       </Deck>
     );
