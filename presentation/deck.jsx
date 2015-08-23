@@ -26,6 +26,15 @@ const images = {
   gulp: require("./images/gulp.png"),
   jspm: require("./images/jspm.png"),
   webpack: require("./images/webpack.png"),
+  react: require("./images/react.png"),
+  angular: require("./images/angular.png"),
+  backbone: require("./images/backbone.png"),
+  cycle: require("./images/cycle.png"),
+  ember: require("./images/ember.png"),
+  knockout: require("./images/knockout.png"),
+  meteor: require("./images/meteor.png"),
+  ractive: require("./images/ractive.png"),
+  vue: require("./images/vue.png"),
 };
 
 preloader([images.city, images.cheese]);
@@ -205,45 +214,55 @@ export default class extends React.Component {
           </Appear>
         </Slide>
         <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
-          <Heading caps size={1} textColor="tertiary">
-            AngularJS
-          </Heading>
+          <Layout>
+            <Image src={images.angular.replace("/", "")} />
+          </Layout>
+        </Slide>
+        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
           <CodePane
             lang="html"
             source={require("raw!./examples/angular.example")}
             margin="20px auto"/>
         </Slide>
         <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
-          <Heading caps size={1} textColor="tertiary">
-            Ember.js
-          </Heading>
+          <Layout>
+            <Image src={images.ember.replace("/", "")} />
+          </Layout>
+        </Slide>
+        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
           <CodePane
             lang="handlebars"
             source={require("raw!./examples/ember.example")}
             margin="20px auto"/>
         </Slide>
         <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
-          <Heading caps size={1} textColor="tertiary">
-            Backbone.js
-          </Heading>
+          <Layout>
+            <Image src={images.backbone.replace("/", "")} />
+          </Layout>
+        </Slide>
+        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
           <CodePane
             lang="html"
             source={require("raw!./examples/backbone.example")}
             margin="20px auto"/>
         </Slide>
         <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
-          <Heading caps size={1} textColor="tertiary">
-            Knockout.js
-          </Heading>
+          <Layout>
+            <Image src={images.knockout.replace("/", "")} />
+          </Layout>
+        </Slide>
+        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
           <CodePane
             lang="html"
             source={require("raw!./examples/knockout.example")}
             margin="20px auto"/>
         </Slide>
         <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
-          <Heading caps size={1} textColor="tertiary">
-            Meteor
-          </Heading>
+          <Layout>
+            <Image src={images.meteor.replace("/", "")} />
+          </Layout>
+        </Slide>
+        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
           <CodePane
             lang="html"
             source={require("raw!./examples/meteor.example")}
@@ -319,9 +338,14 @@ export default class extends React.Component {
             </Heading>
           </Appear>
         </Slide>
+        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+          <Layout>
+            <Image src={images.react.replace("/", "")} />
+          </Layout>
+        </Slide>
         <Slide transition={["slide"]} bgColor="primary">
           <Heading size={1} caps fit textColor="tertiary">
-            Cat Counter in React.js
+            Cat Counter
           </Heading>
           <Interactive/>
         </Slide>
@@ -332,36 +356,39 @@ export default class extends React.Component {
             margin="20px auto"/>
         </Slide>
         <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
-          <Heading caps size={1} textColor="tertiary">
-            React.js
-          </Heading>
           <CodePane
             lang="html"
             source={require("raw!./examples/react.example")}
             margin="20px auto"/>
         </Slide>
         <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
-          <Heading caps size={1} textColor="tertiary">
-            Vue.js
-          </Heading>
+          <Layout>
+            <Image src={images.vue.replace("/", "")} />
+          </Layout>
+        </Slide>
+        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
           <CodePane
             lang="html"
             source={require("raw!./examples/vue.example")}
             margin="20px auto"/>
         </Slide>
         <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
-          <Heading caps size={1} textColor="tertiary">
-            Ractive.js
-          </Heading>
+          <Layout>
+            <Image src={images.ractive.replace("/", "")} />
+          </Layout>
+        </Slide>
+        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
           <CodePane
             lang="html"
             source={require("raw!./examples/ractive.example")}
             margin="20px auto"/>
         </Slide>
         <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
-          <Heading caps size={1} textColor="tertiary">
-            Cycle.js
-          </Heading>
+          <Layout>
+            <Image src={images.cycle.replace("/", "")} />
+          </Layout>
+        </Slide>
+        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
           <CodePane
             lang="javascript"
             source={require("raw!./examples/cycle.example")}
