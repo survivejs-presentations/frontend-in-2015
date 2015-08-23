@@ -496,6 +496,94 @@ export default class extends React.Component {
             </Fill>
           </Layout>
         </Slide>
+        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+          <Heading caps size={1} textColor="tertiary">
+            Make
+          </Heading>
+          <CodePane
+            lang="html"
+            source={require("raw!./examples/make.example")}
+            margin="20px auto"/>
+          <Layout>
+            <Text>
+              <Link href="https://blog.jcoglan.com/2014/02/05/building-javascript-projects-with-make/">Building JavaScript projects with Make</Link>
+            </Text>
+          </Layout>
+        </Slide>
+        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+          <Heading caps size={1} textColor="tertiary">
+            Grunt
+          </Heading>
+          <CodePane
+            lang="javascript"
+            source={require("raw!./examples/grunt.example")}
+            margin="20px auto"/>
+          <Layout>
+            <Text>
+              <Link href="http://gruntjs.com/sample-gruntfile">Grunt documentation</Link>
+            </Text>
+          </Layout>
+        </Slide>
+        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+          <Heading caps size={1} textColor="tertiary">
+            Gulp
+          </Heading>
+          <CodePane
+            lang="javascript"
+            source={require("raw!./examples/gulp.example")}
+            margin="20px auto"/>
+          <Layout>
+            <Text>
+              <Link href="https://github.com/gulpjs/gulp">Gulp README</Link>
+            </Text>
+          </Layout>
+        </Slide>
+        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+          <Heading caps size={1} textColor="tertiary">
+            Broccoli
+          </Heading>
+          <CodePane
+            lang="javascript"
+            source={require("raw!./examples/broccoli.example")}
+            margin="20px auto"/>
+          <Layout>
+            <Text>
+              <Link href="https://github.com/broccolijs/broccoli-sample-app/blob/master/Brocfile.js">broccoli-sample-app</Link>
+            </Text>
+          </Layout>
+        </Slide>
+        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+          <Heading caps size={1} textColor="tertiary">
+            Browserify
+          </Heading>
+          <CodePane
+            lang="html"
+            source={require("raw!./examples/browserify.example")}
+            margin="20px auto"/>
+        </Slide>
+        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+          <Heading caps size={1} textColor="tertiary">
+            Webpack
+          </Heading>
+          <CodePane
+            lang="javascript"
+            source={require("raw!./examples/webpack.example")}
+            margin="20px auto"/>
+        </Slide>
+        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+          <Heading caps size={1} textColor="tertiary">
+            JSPM
+          </Heading>
+          <CodePane
+            lang="html"
+            source={require("raw!./examples/jspm.example")}
+            margin="20px auto"/>
+          <Layout>
+            <Text>
+              <Link href="https://github.com/jspm/jspm-cli/wiki/Getting-Started">JSPM - Getting Started</Link>
+            </Text>
+          </Layout>
+        </Slide>
 
         {/* productivity tools */}
         <Slide transition={["slide", "spin"]} bgColor="primary">

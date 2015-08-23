@@ -1,0 +1,19 @@
+...
+
+// create tree for files in the app folder
+var app = 'app'
+app = pickFiles(app, {
+  srcDir: '/',
+  destDir: 'appkit' // move under appkit namespace
+})
+app = preprocess(app)
+
+// create tree for files in the styles folder
+var styles = 'styles'
+styles = pickFiles(styles, {
+  srcDir: '/',
+  destDir: 'appkit' // move under appkit namespace
+})
+styles = preprocess(styles)
+
+...

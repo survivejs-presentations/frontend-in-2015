@@ -1,0 +1,6 @@
+PATH  := node_modules/.bin:$(PATH)
+SHELL := /bin/bash
+
+build/templates.js: templates/*.handlebars
+    mkdir -p $(dir $@)
+    handlebars templates/*.handlebars > $@
