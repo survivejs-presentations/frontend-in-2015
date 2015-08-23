@@ -19,7 +19,6 @@ const images = {
   style: require("./images/style.jpg"),
   jobs: require("./images/jobs.png"),
   redmonk: require("./images/redmonk.png"),
-  sohot: require("./images/sohot.jpg"),
   moduleCounts: require("./images/module_counts.png"),
 };
 
@@ -153,13 +152,6 @@ export default class extends React.Component {
                 Libraries
               </Heading>
             </Fill>
-          </Layout>
-        </Slide>
-        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
-          <Layout>
-            <Link href="http://blog.bitovi.com/longevity-or-lack-thereof-in-javascript-frameworks/">
-              <Image src={images.sohot.replace("/", "")} />
-            </Link>
           </Layout>
         </Slide>
 
