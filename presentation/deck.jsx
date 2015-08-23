@@ -260,15 +260,15 @@ export default class extends React.Component {
               </TableRow>
               <TableRow>
                 <TableItem>Ember.js</TableItem>
-                <TableItem>Niche, popular with rubists</TableItem>
+                <TableItem>Niche, popular with rubists, reached 2.0 recently</TableItem>
               </TableRow>
               <TableRow>
                 <TableItem>Backbone.js</TableItem>
-                <TableItem>Used to be popular, still in use</TableItem>
+                <TableItem>Used to be popular, still in use, focus on model</TableItem>
               </TableRow>
               <TableRow>
                 <TableItem>Knockout.js</TableItem>
-                <TableItem>MVVM, niche</TableItem>
+                <TableItem>MVVM, niche, focus on data binding</TableItem>
               </TableRow>
               <TableRow>
                 <TableItem>Meteor</TableItem>
@@ -321,9 +321,6 @@ export default class extends React.Component {
           <Interactive/>
         </Slide>
         <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
-          <Heading caps size={1} textColor="tertiary">
-            Cat Code
-          </Heading>
           <CodePane
             lang="javascript"
             source={require("raw!./examples/cat.example")}
