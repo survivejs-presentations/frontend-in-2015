@@ -20,6 +20,7 @@ const images = {
   jobs: require("./images/jobs.png"),
   redmonk: require("./images/redmonk.png"),
   moduleCounts: require("./images/module_counts.png"),
+  todomvc: require("./images/todomvc.png"),
 };
 
 preloader([images.city, images.cheese]);
@@ -152,6 +153,13 @@ export default class extends React.Component {
                 Libraries
               </Heading>
             </Fill>
+          </Layout>
+        </Slide>
+        <Slide transition={['zoom', 'fade']} bgColor="secondary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+          <Layout>
+            <Link href="http://todomvc.com/">
+              <Image src={images.todomvc.replace("/", "")} padding="20px"  />
+            </Link>
           </Layout>
         </Slide>
 
