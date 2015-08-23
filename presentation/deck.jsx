@@ -21,6 +21,11 @@ const images = {
   redmonk: require("./images/redmonk.png"),
   moduleCounts: require("./images/module_counts.png"),
   todomvc: require("./images/todomvc.png"),
+  browserify: require("./images/browserify.png"),
+  grunt: require("./images/grunt.png"),
+  gulp: require("./images/gulp.png"),
+  jspm: require("./images/jspm.png"),
+  webpack: require("./images/webpack.png"),
 };
 
 preloader([images.city, images.cheese]);
@@ -500,6 +505,8 @@ export default class extends React.Component {
           <Heading caps size={1} textColor="tertiary">
             Make
           </Heading>
+        </Slide>
+        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
           <CodePane
             lang="html"
             source={require("raw!./examples/make.example")}
@@ -511,9 +518,11 @@ export default class extends React.Component {
           </Layout>
         </Slide>
         <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
-          <Heading caps size={1} textColor="tertiary">
-            Grunt
-          </Heading>
+          <Layout>
+            <Image src={images.grunt.replace("/", "")} />
+          </Layout>
+        </Slide>
+        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
           <CodePane
             lang="javascript"
             source={require("raw!./examples/grunt.example")}
@@ -525,9 +534,11 @@ export default class extends React.Component {
           </Layout>
         </Slide>
         <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
-          <Heading caps size={1} textColor="tertiary">
-            Gulp
-          </Heading>
+          <Layout>
+            <Image src={images.gulp.replace("/", "")} />
+          </Layout>
+        </Slide>
+        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
           <CodePane
             lang="javascript"
             source={require("raw!./examples/gulp.example")}
@@ -542,6 +553,8 @@ export default class extends React.Component {
           <Heading caps size={1} textColor="tertiary">
             Broccoli
           </Heading>
+        </Slide>
+        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
           <CodePane
             lang="javascript"
             source={require("raw!./examples/broccoli.example")}
@@ -553,27 +566,33 @@ export default class extends React.Component {
           </Layout>
         </Slide>
         <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
-          <Heading caps size={1} textColor="tertiary">
-            Browserify
-          </Heading>
+          <Layout>
+            <Image src={images.browserify.replace("/", "")} />
+          </Layout>
+        </Slide>
+        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
           <CodePane
             lang="html"
             source={require("raw!./examples/browserify.example")}
             margin="20px auto"/>
         </Slide>
         <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
-          <Heading caps size={1} textColor="tertiary">
-            Webpack
-          </Heading>
+          <Layout>
+            <Image src={images.webpack.replace("/", "")} />
+          </Layout>
+        </Slide>
+        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
           <CodePane
             lang="javascript"
             source={require("raw!./examples/webpack.example")}
             margin="20px auto"/>
         </Slide>
         <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
-          <Heading caps size={1} textColor="tertiary">
-            JSPM
-          </Heading>
+          <Layout>
+            <Image src={images.jspm.replace("/", "")} />
+          </Layout>
+        </Slide>
+        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
           <CodePane
             lang="html"
             source={require("raw!./examples/jspm.example")}
