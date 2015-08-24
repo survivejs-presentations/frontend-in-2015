@@ -35,6 +35,7 @@ const images = {
   meteor: require("./images/meteor.png"),
   ractive: require("./images/ractive.png"),
   vue: require("./images/vue.png"),
+  cssProcessors: require("./images/css_processors.jpg"),
 };
 
 preloader([images.city, images.cheese]);
@@ -691,6 +692,16 @@ export default class extends React.Component {
         <Slide transition={["slide"]} bgColor="primary" bgImage={images.style.replace("/", "")} bgDarken={0.75}>
           <Heading caps >PostCSS, cssnext</Heading>
           <Heading caps size={2} textColor="primary">Extensions</Heading>
+        </Slide>
+        <Slide transition={["slide"]} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+          <Layout>
+            <Image src={images.cssProcessors.replace("/", "")} padding="20px" />
+          </Layout>
+          <Layout>
+            <Text>
+              <Link href="https://medium.com/@ddprrt/deconfusing-pre-and-post-processing-d68e3bd078a3">Deconfusing Pre- and Post-processing</Link>
+            </Text>
+          </Layout>
         </Slide>
         <Slide transition={["slide"]} bgColor="primary" bgImage={images.style.replace("/", "")} bgDarken={0.75}>
           <Heading caps >Inline CSS (React)</Heading>
