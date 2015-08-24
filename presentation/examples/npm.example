@@ -2,7 +2,6 @@
   "name": "react-component-boilerplate",
   "description": "Boilerplate for React.js components",
   "author": "Juho Vepsalainen",
-  "user": "survivejs",
   "version": "0.6.0",
   "scripts": {
     "start": "node lib/dev_server.js",
