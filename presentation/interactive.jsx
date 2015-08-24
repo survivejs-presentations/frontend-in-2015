@@ -1,7 +1,7 @@
-import React from "react/addons";
+import React from "react";
 import Heading from "../src/heading";
 
-export default class Interactive extends React.Component {
+export default class CatCounter extends React.Component {
   constructor(props) {
     super(props);
     this.state = { count: 0 };
