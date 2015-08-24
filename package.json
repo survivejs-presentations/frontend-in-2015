@@ -1,7 +1,7 @@
 {
   "name": "frontend-in-2015",
-  "version": "0.0.5",
-  "author": "Juho Vepsalainen",
+  "version": "0.9.0",
+  "author": "",
   "description": "Frontend in 2015",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,6 @@
     "build": "webpack",
     "deploy": "node ./src/deploy_gh_pages.js"
   },
-  "author": "",
   "license": "MIT",
   "dependencies": {
     "alt": "^0.16.10",
