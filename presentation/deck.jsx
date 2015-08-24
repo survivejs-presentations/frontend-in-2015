@@ -829,7 +829,9 @@ export default class extends React.Component {
         </Slide>
         <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
           <List>
-            <ListItem><Appear fid="1">TODO</Appear></ListItem>
+            <ListItem><Appear fid="1">Prepare to clear the decks often</Appear></ListItem>
+            <ListItem><Appear fid="2">A lot to learn but focus pays off</Appear></ListItem>
+            <ListItem><Appear fid="3">Towards a component based future?</Appear></ListItem>
           </List>
         </Slide>
         <Slide transition={["slide", "spin"]} bgColor="primary">
