@@ -280,7 +280,7 @@ export default class extends React.Component {
               </TableRow>
               <TableRow>
                 <TableItem>AngularJS</TableItem>
-                <TableItem>Google backed, full featured, v2 in sight</TableItem>
+                <TableItem>Google backed, full featured, 2.0 in sight</TableItem>
               </TableRow>
               <TableRow>
                 <TableItem>Ember.js</TableItem>
