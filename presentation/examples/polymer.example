@@ -1,0 +1,13 @@
+<section id="main" hidden?="{{model.items.length == 0}}">
+  <input id="toggle-all" type="checkbox"
+    on-change="{{toggleAllCompletedAction}}"
+    checked="{{model.allCompleted}}">
+  <label for="toggle-all">Mark all as complete</label>
+  <ul id="todo-list"
+      on-td-item-changed="{{itemChangedAction}}"
+      on-td-destroy-item="{{destroyItemAction}}">
+    <template repeat="{{model.filtered}}">
+      <li is="td-item" item="{{}}"></li>
+    </template>
+  </ul>
+</section>

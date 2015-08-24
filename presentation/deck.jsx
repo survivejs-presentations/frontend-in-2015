@@ -36,6 +36,7 @@ const images = {
   ractive: require("./images/ractive.png"),
   vue: require("./images/vue.png"),
   cssProcessors: require("./images/css_processors.jpg"),
+  polymer: require("./images/polymer.png"),
 };
 
 preloader([images.city, images.cheese]);
@@ -800,8 +801,21 @@ export default class extends React.Component {
         </Slide>
         <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
           <List>
-            <ListItem><Appear fid="1">TODO</Appear></ListItem>
+            <ListItem><Appear fid="1">Fragmentation (Bootstrap for AngularJS, Ember, React, ...)</Appear></ListItem>
+            <ListItem><Appear fid="2">What if there was only one canonical version?</Appear></ListItem>
+            <ListItem><Appear fid="3">Improved reuse, sharing across projects, less waste</Appear></ListItem>
           </List>
+        </Slide>
+        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+          <Layout>
+            <Image src={images.polymer.replace("/", "")} />
+          </Layout>
+        </Slide>
+        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+          <CodePane
+            lang="html"
+            source={require("raw!./examples/polymer.example")}
+            margin="20px auto"/>
         </Slide>
 
         {/* conclusion */}
