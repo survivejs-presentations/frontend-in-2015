@@ -1,7 +1,8 @@
 {
-  "name": "spectacle",
+  "name": "frontend-in-2015",
   "version": "0.0.5",
-  "description": "ReactJS Powered Presentation Framework",
+  "author": "Juho Vepsalainen",
+  "description": "Frontend in 2015",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server",
@@ -10,7 +11,7 @@
     "deploy": "node ./src/deploy_gh_pages.js"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "alt": "^0.16.10",
     "highlight.js": "^8.6.0",
