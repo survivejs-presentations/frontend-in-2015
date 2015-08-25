@@ -44,7 +44,7 @@ preloader([images.city, images.cheese]);
 export default class extends React.Component {
   render() {
     return (
-      <Deck transition={["zoom", "slide"]} transitionDuration={800}>
+      <Deck transition={["zoom", "slide"]} transitionDuration={800} progress={'bar'}>
         {/* intro */}
         <Slide transition={["zoom"]} bgColor="primary">
           <Heading size={1} fit caps textColor="black">
