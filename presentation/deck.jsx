@@ -211,6 +211,11 @@ export default class extends React.Component {
           </Appear>
           <Appear fid="5">
             <Heading size={2} caps textColor="primary">
+              Polymer
+            </Heading>
+          </Appear>
+          <Appear fid="6">
+            <Heading size={2} caps textColor="tertiary">
               Meteor
             </Heading>
           </Appear>
@@ -270,6 +275,17 @@ export default class extends React.Component {
             source={require("raw!./examples/meteor.example")}
             margin="20px auto"/>
         </Slide>
+        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+          <Layout>
+            <Image src={images.polymer.replace("/", "")} />
+          </Layout>
+        </Slide>
+        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+          <CodePane
+            lang="html"
+            source={require("raw!./examples/polymer.example")}
+            margin="20px auto"/>
+        </Slide>
         <Slide transition={["zoom", "fade"]} bgColor="primary">
           <Heading size={4} caps textColor="secondary" bgColor="white" margin={10}>
             Comparison
@@ -295,6 +311,10 @@ export default class extends React.Component {
               <TableRow>
                 <TableItem>Knockout.js</TableItem>
                 <TableItem>MVVM, niche, focus on data binding</TableItem>
+              </TableRow>
+              <TableRow>
+                <TableItem>Polymer</TableItem>
+                <TableItem>Web Components</TableItem>
               </TableRow>
               <TableRow>
                 <TableItem>Meteor</TableItem>
@@ -805,17 +825,6 @@ export default class extends React.Component {
             <ListItem><Appear fid="2">What if there was only one canonical version?</Appear></ListItem>
             <ListItem><Appear fid="3">Improved reuse, sharing across projects, less waste</Appear></ListItem>
           </List>
-        </Slide>
-        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
-          <Layout>
-            <Image src={images.polymer.replace("/", "")} />
-          </Layout>
-        </Slide>
-        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
-          <CodePane
-            lang="html"
-            source={require("raw!./examples/polymer.example")}
-            margin="20px auto"/>
         </Slide>
 
         {/* conclusion */}
