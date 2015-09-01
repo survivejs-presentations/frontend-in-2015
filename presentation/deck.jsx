@@ -488,6 +488,38 @@ export default class extends React.Component {
           </List>
         </Slide>
 
+        {/* architecture */}
+        <Slide transition={["slide", "spin"]} bgColor="primary">
+          <Heading caps fit size={1} textColor="tertiary">
+            Architecture
+          </Heading>
+          <Heading caps size={2} textColor="secondary">
+            The Art of Wasting Space
+          </Heading>
+        </Slide>
+        <Slide transition={["slide"]} bgImage={images.city} bgDarken={0.75}>
+          <Appear fid="1">
+            <Heading size={2} caps textColor="primary">
+              Static Sites
+            </Heading>
+          </Appear>
+          <Appear fid="2">
+            <Heading size={2} caps textColor="tertiary">
+              Dynamic Sites
+            </Heading>
+          </Appear>
+          <Appear fid="3">
+            <Heading size={2} caps textColor="primary">
+              REST
+            </Heading>
+          </Appear>
+          <Appear fid="4">
+            <Heading size={2} caps textColor="tertiary">
+              Relay/Falcor
+            </Heading>
+          </Appear>
+        </Slide>
+
         {/* interlude */}
         <Slide transition={["slide"]} bgColor="black">
           <BlockQuote>
