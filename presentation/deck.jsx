@@ -39,6 +39,7 @@ const images = _.mapValues({
   cssProcessors: require("./images/css_processors.jpg"),
   polymer: require("./images/polymer.png"),
   jobTitles: require("./images/jobtitles.png"),
+  broccoli: require("./images/broccoli.png"),
 }, (v) => v.replace("/", ""));
 
 preloader([images.city, images.cheese]);
@@ -614,9 +615,9 @@ export default class extends React.Component {
           </Layout>
         </Slide>
         <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
-          <Heading caps size={1} textColor="tertiary">
-            Broccoli
-          </Heading>
+          <Layout>
+            <Image src={images.broccoli} />
+          </Layout>
         </Slide>
         <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
           <CodePane
