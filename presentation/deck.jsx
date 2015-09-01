@@ -1,4 +1,5 @@
 import React from "react/addons";
+import _ from "lodash";
 
 import {
   Appear, BlockQuote, Cite, CodePane, Deck, Fill,
@@ -10,7 +11,7 @@ import Interactive from "./interactive.jsx";
 
 import preloader from "../src/utils/preloader";
 
-const images = {
+const images = _.mapValues({
   city: require("./images/city.jpg"),
   cheese: require("./images/cheese.jpg"),
   boxing: require("./images/boxing.jpg"),
@@ -37,7 +38,7 @@ const images = {
   vue: require("./images/vue.png"),
   cssProcessors: require("./images/css_processors.jpg"),
   polymer: require("./images/polymer.png"),
-};
+}, (v) => v.replace("/", ""));
 
 preloader([images.city, images.cheese]);
 
@@ -60,7 +61,7 @@ export default class extends React.Component {
             <Text bold caps textColor="tertiary">View on Github</Text>
           </Link>
         </Slide>
-        <Slide transition={["slide"]} bgImage={images.city.replace("/", "")} bgDarken={0.75}>
+        <Slide transition={["slide"]} bgImage={images.city} bgDarken={0.75}>
           <Appear fid="1">
             <Heading size={1} caps fit textColor="primary">
               User Experience
@@ -130,11 +131,11 @@ export default class extends React.Component {
         <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
           <Layout>
             <Link href="http://redmonk.com/jgovernor/2015/07/31/programming-language-rankings-summer-2015/">
-              <Image src={images.redmonk.replace("/", "")} />
+              <Image src={images.redmonk} />
             </Link>
           </Layout>
         </Slide>
-        <Slide transition={["slide"]} bgImage={images.city.replace("/", "")} bgDarken={0.75}>
+        <Slide transition={["slide"]} bgImage={images.city} bgDarken={0.75}>
           <Appear fid="1">
             <Heading size={2} caps fit textColor="primary">
               Inline JavaScript
@@ -156,7 +157,7 @@ export default class extends React.Component {
             </Heading>
           </Appear>
         </Slide>
-        <Slide transition={["zoom", "fade"]} bgColor="primary" bgImage={images.cheese.replace("/", "")} bgDarken={0.75}>
+        <Slide transition={["zoom", "fade"]} bgColor="primary" bgImage={images.cheese} bgDarken={0.75}>
           <Heading caps fit>Pick your poison</Heading>
           <Layout>
             <Fill>
@@ -174,7 +175,7 @@ export default class extends React.Component {
         <Slide transition={['zoom', 'fade']} bgColor="secondary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
           <Layout>
             <Link href="http://todomvc.com/">
-              <Image src={images.todomvc.replace("/", "")} padding="20px"  />
+              <Image src={images.todomvc} padding="20px"  />
             </Link>
           </Layout>
         </Slide>
@@ -188,7 +189,7 @@ export default class extends React.Component {
             Swiss knives
           </Heading>
         </Slide>
-        <Slide transition={["slide"]} bgImage={images.city.replace("/", "")} bgDarken={0.75}>
+        <Slide transition={["slide"]} bgImage={images.city} bgDarken={0.75}>
           <Appear fid="1">
             <Heading size={2} caps textColor="primary">
               AngularJS
@@ -222,7 +223,7 @@ export default class extends React.Component {
         </Slide>
         <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
           <Layout>
-            <Image src={images.angular.replace("/", "")} />
+            <Image src={images.angular} />
           </Layout>
         </Slide>
         <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
@@ -233,7 +234,7 @@ export default class extends React.Component {
         </Slide>
         <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
           <Layout>
-            <Image src={images.ember.replace("/", "")} />
+            <Image src={images.ember} />
           </Layout>
         </Slide>
         <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
@@ -244,7 +245,7 @@ export default class extends React.Component {
         </Slide>
         <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
           <Layout>
-            <Image src={images.backbone.replace("/", "")} />
+            <Image src={images.backbone} />
           </Layout>
         </Slide>
         <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
@@ -255,7 +256,7 @@ export default class extends React.Component {
         </Slide>
         <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
           <Layout>
-            <Image src={images.knockout.replace("/", "")} />
+            <Image src={images.knockout} />
           </Layout>
         </Slide>
         <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
@@ -266,7 +267,7 @@ export default class extends React.Component {
         </Slide>
         <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
           <Layout>
-            <Image src={images.meteor.replace("/", "")} />
+            <Image src={images.meteor} />
           </Layout>
         </Slide>
         <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
@@ -277,7 +278,7 @@ export default class extends React.Component {
         </Slide>
         <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
           <Layout>
-            <Image src={images.polymer.replace("/", "")} />
+            <Image src={images.polymer} />
           </Layout>
         </Slide>
         <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
@@ -333,7 +334,7 @@ export default class extends React.Component {
             For specific problems
           </Heading>
         </Slide>
-        <Slide transition={["slide"]} bgImage={images.city.replace("/", "")} bgDarken={0.75}>
+        <Slide transition={["slide"]} bgImage={images.city} bgDarken={0.75}>
           <Appear fid="1">
             <Heading size={2} caps textColor="primary">
               React.js
@@ -362,7 +363,7 @@ export default class extends React.Component {
         </Slide>
         <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
           <Layout>
-            <Image src={images.react.replace("/", "")} />
+            <Image src={images.react} />
           </Layout>
         </Slide>
         <Slide transition={["slide"]} bgColor="primary">
@@ -385,7 +386,7 @@ export default class extends React.Component {
         </Slide>
         <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
           <Layout>
-            <Image src={images.vue.replace("/", "")} />
+            <Image src={images.vue} />
           </Layout>
         </Slide>
         <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
@@ -396,7 +397,7 @@ export default class extends React.Component {
         </Slide>
         <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
           <Layout>
-            <Image src={images.ractive.replace("/", "")} />
+            <Image src={images.ractive} />
           </Layout>
         </Slide>
         <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
@@ -407,7 +408,7 @@ export default class extends React.Component {
         </Slide>
         <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
           <Layout>
-            <Image src={images.cycle.replace("/", "")} />
+            <Image src={images.cycle} />
           </Layout>
         </Slide>
         <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
@@ -460,7 +461,7 @@ export default class extends React.Component {
             Job Trends
           </Heading>
           <Layout>
-            <Image src={images.jobs.replace("/", "")} padding="20px" />
+            <Image src={images.jobs} padding="20px" />
           </Layout>
           <Layout>
             <Text>
@@ -483,7 +484,7 @@ export default class extends React.Component {
             Module Counts
           </Heading>
           <Layout>
-            <Image src={images.moduleCounts.replace("/", "")} padding="20px" />
+            <Image src={images.moduleCounts} padding="20px" />
           </Layout>
           <Layout>
             <Text>
@@ -491,7 +492,7 @@ export default class extends React.Component {
             </Text>
           </Layout>
         </Slide>
-        <Slide transition={["fade"]} textColor="primary" bgImage={images.boxing.replace("/", "")} bgDarken={0.75}>
+        <Slide transition={["fade"]} textColor="primary" bgImage={images.boxing} bgDarken={0.75}>
           <List>
             <ListItem><Appear fid="1">176k+ packages and growing fast</Appear></ListItem>
             <ListItem><Appear fid="2">Dependency management</Appear></ListItem>
@@ -568,7 +569,7 @@ export default class extends React.Component {
         </Slide>
         <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
           <Layout>
-            <Image src={images.grunt.replace("/", "")} />
+            <Image src={images.grunt} />
           </Layout>
         </Slide>
         <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
@@ -584,7 +585,7 @@ export default class extends React.Component {
         </Slide>
         <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
           <Layout>
-            <Image src={images.gulp.replace("/", "")} />
+            <Image src={images.gulp} />
           </Layout>
         </Slide>
         <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
@@ -616,7 +617,7 @@ export default class extends React.Component {
         </Slide>
         <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
           <Layout>
-            <Image src={images.browserify.replace("/", "")} />
+            <Image src={images.browserify} />
           </Layout>
         </Slide>
         <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
@@ -627,7 +628,7 @@ export default class extends React.Component {
         </Slide>
         <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
           <Layout>
-            <Image src={images.webpack.replace("/", "")} />
+            <Image src={images.webpack} />
           </Layout>
         </Slide>
         <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
@@ -638,7 +639,7 @@ export default class extends React.Component {
         </Slide>
         <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
           <Layout>
-            <Image src={images.jspm.replace("/", "")} />
+            <Image src={images.jspm} />
           </Layout>
         </Slide>
         <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
@@ -702,21 +703,21 @@ export default class extends React.Component {
             Because Vanilla Isn't Enough
           </Heading>
         </Slide>
-        <Slide transition={["slide"]} bgColor="primary" bgImage={images.style.replace("/", "")} bgDarken={0.75}>
+        <Slide transition={["slide"]} bgColor="primary" bgImage={images.style} bgDarken={0.75}>
           <Heading caps >BEM, OOCSS, SMACSS</Heading>
           <Heading caps size={2} textColor="primary">Solving CSS within CSS</Heading>
         </Slide>
-        <Slide transition={["slide"]} bgColor="primary" bgImage={images.style.replace("/", "")} bgDarken={0.75}>
+        <Slide transition={["slide"]} bgColor="primary" bgImage={images.style} bgDarken={0.75}>
           <Heading caps >SASS, Less, Stylus</Heading>
           <Heading caps size={2} textColor="primary">Better languages</Heading>
         </Slide>
-        <Slide transition={["slide"]} bgColor="primary" bgImage={images.style.replace("/", "")} bgDarken={0.75}>
+        <Slide transition={["slide"]} bgColor="primary" bgImage={images.style} bgDarken={0.75}>
           <Heading caps >PostCSS, cssnext</Heading>
           <Heading caps size={2} textColor="primary">Extensions</Heading>
         </Slide>
         <Slide transition={["slide"]} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
           <Layout>
-            <Image src={images.cssProcessors.replace("/", "")} padding="20px" />
+            <Image src={images.cssProcessors} padding="20px" />
           </Layout>
           <Layout>
             <Text>
@@ -724,11 +725,11 @@ export default class extends React.Component {
             </Text>
           </Layout>
         </Slide>
-        <Slide transition={["slide"]} bgColor="primary" bgImage={images.style.replace("/", "")} bgDarken={0.75}>
+        <Slide transition={["slide"]} bgColor="primary" bgImage={images.style} bgDarken={0.75}>
           <Heading caps >Inline CSS (React)</Heading>
           <Heading caps size={2} textColor="primary">Back to the future?</Heading>
         </Slide>
-        <Slide transition={["slide"]} bgColor="primary" bgImage={images.style.replace("/", "")} bgDarken={0.75}>
+        <Slide transition={["slide"]} bgColor="primary" bgImage={images.style} bgDarken={0.75}>
           <Heading caps >CSS Modules</Heading>
           <Heading caps size={2} textColor="primary">Eliminates globals, modularity++</Heading>
         </Slide>
@@ -746,7 +747,7 @@ export default class extends React.Component {
           <Heading caps >Babel</Heading>
           <Heading caps size={2} textColor="primary">The Future Now</Heading>
         </Slide>
-        <Slide transition={["fade"]} bgColor="secondary" textColor="primary" bgImage={images.babel.replace("/", "")} bgDarken={0.75}>
+        <Slide transition={["fade"]} bgColor="secondary" textColor="primary" bgImage={images.babel} bgDarken={0.75}>
           <List>
             <ListItem><Appear fid="1">JavaScript compiler</Appear></ListItem>
             <ListItem><Appear fid="2">JSX support out of box</Appear></ListItem>
@@ -764,11 +765,11 @@ export default class extends React.Component {
             To keep bugs at bay
           </Heading>
         </Slide>
-        <Slide transition={["slide"]} bgColor="primary" bgImage={images.lint.replace("/", "")} bgDarken={0.75}>
+        <Slide transition={["slide"]} bgColor="primary" bgImage={images.lint} bgDarken={0.75}>
           <Heading caps >ESLint</Heading>
           <Heading caps size={2} textColor="primary">Pluggable linting for JavaScript</Heading>
         </Slide>
-        <Slide transition={["slide"]} bgColor="primary" bgImage={images.lint.replace("/", "")} bgDarken={0.75}>
+        <Slide transition={["slide"]} bgColor="primary" bgImage={images.lint} bgDarken={0.75}>
           <Heading caps >csslint</Heading>
           <Heading caps size={2} textColor="primary">Rules for improving your CSS</Heading>
         </Slide>
@@ -782,7 +783,7 @@ export default class extends React.Component {
             To make things work for sure
           </Heading>
         </Slide>
-        <Slide transition={["slide"]} bgImage={images.city.replace("/", "")} bgDarken={0.75}>
+        <Slide transition={["slide"]} bgImage={images.city} bgDarken={0.75}>
           <Appear fid="1">
             <Heading size={2} caps textColor="primary">
               Selenium
