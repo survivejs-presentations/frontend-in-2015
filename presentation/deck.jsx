@@ -753,6 +753,9 @@ export default class extends React.Component {
               <Link href="https://www.youtube.com/watch?v=iukBMY4apvI">Glen Maddern's video tutorial</Link>
             </Text>
           </Layout>
+          <Layout>
+            <Text>HTTP2</Text>
+          </Layout>
         </Slide>
 
         {/* productivity tools */}
