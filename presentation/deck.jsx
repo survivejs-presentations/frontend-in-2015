@@ -379,6 +379,18 @@ export default class extends React.Component {
             <Image src={images.react} />
           </Layout>
         </Slide>
+        <Slide transition={["zoom", "fade"]} bgColor="primary">
+          <Heading size={4} caps textColor="secondary" bgColor="white" margin={10}>
+            Overview of React
+          </Heading>
+          <List>
+            <ListItem><Appear fid="1">Virtual DOM</Appear></ListItem>
+            <ListItem><Appear fid="2">Component oriented!</Appear></ListItem>
+            <ListItem><Appear fid="3">state, props, lifecycle</Appear></ListItem>
+            <ListItem><Appear fid="4"><Link href="https://facebook.github.io/react-native/">React Native</Link></Appear></ListItem>
+            <ListItem><Appear fid="5"><Link href="https://github.com/Yomguithereal/react-blessed">react-blessed</Link></Appear></ListItem>
+          </List>
+        </Slide>
         <Slide transition={["slide"]} bgColor="primary">
           <Heading size={1} caps fit textColor="tertiary">
             Cat Counter
