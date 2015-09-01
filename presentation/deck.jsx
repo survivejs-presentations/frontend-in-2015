@@ -342,6 +342,11 @@ export default class extends React.Component {
             For specific problems
           </Heading>
         </Slide>
+        <Slide transition={["slide", "spin"]} bgColor="primary">
+          <Heading caps fit size={1} textColor="tertiary">
+            View Libraries
+          </Heading>
+        </Slide>
         <Slide transition={["slide"]} bgImage={images.city} bgDarken={0.75}>
           <Appear fid="1">
             <Heading size={2} caps textColor="primary">
@@ -453,6 +458,22 @@ export default class extends React.Component {
               </TableRow>
             </Table>
           </Layout>
+        </Slide>
+        <Slide transition={["slide", "spin"]} bgColor="primary">
+          <Heading caps fit size={1} textColor="tertiary">
+            Routers
+          </Heading>
+        </Slide>
+        <Slide transition={["zoom", "fade"]} bgColor="primary">
+          <Heading size={4} caps textColor="secondary" bgColor="white" margin={10}>
+            Routers
+          </Heading>
+          <List>
+            <ListItem><Appear fid="1"><Link href="https://github.com/rackt/react-router">react-router</Link> - React</Appear></ListItem>
+            <ListItem><Appear fid="2"><Link href="https://github.com/christianalfoni/reactive-router">reactive-router</Link>  - React</Appear></ListItem>
+            <ListItem><Appear fid="3"><Link href="https://github.com/kadirahq/flow-router">flow-router</Link> - Meteor</Appear></ListItem>
+            <ListItem><Appear fid="4"><Link href="https://router5.github.io/">router5</Link></Appear></ListItem>
+          </List>
         </Slide>
 
         {/* interlude */}
@@ -775,8 +796,8 @@ export default class extends React.Component {
           <List>
             <ListItem><Appear fid="1">JavaScript compiler</Appear></ListItem>
             <ListItem><Appear fid="2">JSX support out of box</Appear></ListItem>
-            <ListItem><Appear fid="2">Easy to setup</Appear></ListItem>
-            <ListItem><Appear fid="3">See also Google Traceur</Appear></ListItem>
+            <ListItem><Appear fid="3">Easy to setup</Appear></ListItem>
+            <ListItem><Appear fid="4">See also Google Traceur</Appear></ListItem>
           </List>
         </Slide>
 
