@@ -666,6 +666,9 @@ export default class extends React.Component {
             <Text>
               <Link href="https://github.com/jspm/jspm-cli/wiki/Getting-Started">JSPM - Getting Started</Link>
             </Text>
+            <Text>
+              <Link href="https://www.youtube.com/watch?v=iukBMY4apvI">Glen Maddern's video tutorial</Link>
+            </Text>
           </Layout>
         </Slide>
 
