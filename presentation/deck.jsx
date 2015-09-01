@@ -38,6 +38,7 @@ const images = _.mapValues({
   vue: require("./images/vue.png"),
   cssProcessors: require("./images/css_processors.jpg"),
   polymer: require("./images/polymer.png"),
+  jobTitles: require("./images/jobtitles.png"),
 }, (v) => v.replace("/", ""));
 
 preloader([images.city, images.cheese]);
@@ -466,6 +467,19 @@ export default class extends React.Component {
           <Layout>
             <Text>
               <Link href="http://www.indeed.com/jobtrends?q=Angularjs%2C+React.js%2C+Knockout%2C+Backbone.js&l=">Indeed</Link>
+            </Text>
+          </Layout>
+        </Slide>
+        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+          <Heading size={1} textColor="tertiary">
+            Job Trends II
+          </Heading>
+          <Layout>
+            <Image src={images.jobTitles} padding="20px" />
+          </Layout>
+          <Layout>
+            <Text>
+              <Link href="http://www.indeed.com/jobanalytics/jobtrends?q=frontend%2C+backend%2C+full+stack&l=">Indeed</Link>
             </Text>
           </Layout>
         </Slide>
