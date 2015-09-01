@@ -40,6 +40,8 @@ const images = _.mapValues({
   polymer: require("./images/polymer.png"),
   jobTitles: require("./images/jobtitles.png"),
   broccoli: require("./images/broccoli.png"),
+  html: require("./images/html.jpg"),
+  tablet: require("./images/tablet.jpg"),
 }, (v) => v.replace("/", ""));
 
 preloader([images.city, images.cheese]);
@@ -136,6 +138,10 @@ export default class extends React.Component {
               <Image src={images.redmonk} />
             </Link>
           </Layout>
+        </Slide>
+        <Slide transition={['zoom', 'fade']} bgImage={images.html}  notes="<ul><li>talk about that</li><li>and that</li></ul>">
+        </Slide>
+        <Slide transition={['zoom', 'fade']} bgImage={images.tablet} notes="<ul><li>talk about that</li><li>and that</li></ul>">
         </Slide>
         <Slide transition={["slide"]} bgImage={images.city} bgDarken={0.75}>
           <Appear fid="1">
