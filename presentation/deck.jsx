@@ -852,7 +852,7 @@ export default class extends React.Component {
             <ListItem><Appear fid="1">JavaScript compiler</Appear></ListItem>
             <ListItem><Appear fid="2">JSX support out of box</Appear></ListItem>
             <ListItem><Appear fid="3">Easy to setup</Appear></ListItem>
-            <ListItem><Appear fid="4">See also Google Traceur</Appear></ListItem>
+            <ListItem><Appear fid="4">See also <Link href="https://github.com/google/traceur-compiler">Google Traceur</Link></Appear></ListItem>
           </List>
         </Slide>
 
