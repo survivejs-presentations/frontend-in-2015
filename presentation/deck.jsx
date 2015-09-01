@@ -489,6 +489,34 @@ export default class extends React.Component {
           </List>
         </Slide>
 
+        {/* jobs (usage) */}
+        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+          <Heading size={1} textColor="tertiary">
+            Job Trends
+          </Heading>
+          <Layout>
+            <Image src={images.jobs} padding="20px" />
+          </Layout>
+          <Layout>
+            <Text>
+              <Link href="http://www.indeed.com/jobtrends?q=Angularjs%2C+React.js%2C+Knockout%2C+Backbone.js&l=">Indeed</Link>
+            </Text>
+          </Layout>
+        </Slide>
+        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+          <Heading size={1} textColor="tertiary">
+            Job Trends II
+          </Heading>
+          <Layout>
+            <Image src={images.jobTitles} padding="20px" />
+          </Layout>
+          <Layout>
+            <Text>
+              <Link href="http://www.indeed.com/jobanalytics/jobtrends?q=frontend%2C+backend%2C+full+stack&l=">Indeed</Link>
+            </Text>
+          </Layout>
+        </Slide>
+
         {/* architecture */}
         <Slide transition={["slide", "spin"]} bgColor="primary">
           <Heading caps fit size={1} textColor="tertiary">
@@ -537,34 +565,6 @@ export default class extends React.Component {
             <Quote>Design is the beauty of turning constraints into advantages</Quote>
             <Cite>Aza Raskin</Cite>
           </BlockQuote>
-        </Slide>
-
-        {/* jobs (usage) */}
-        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
-          <Heading size={1} textColor="tertiary">
-            Job Trends
-          </Heading>
-          <Layout>
-            <Image src={images.jobs} padding="20px" />
-          </Layout>
-          <Layout>
-            <Text>
-              <Link href="http://www.indeed.com/jobtrends?q=Angularjs%2C+React.js%2C+Knockout%2C+Backbone.js&l=">Indeed</Link>
-            </Text>
-          </Layout>
-        </Slide>
-        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
-          <Heading size={1} textColor="tertiary">
-            Job Trends II
-          </Heading>
-          <Layout>
-            <Image src={images.jobTitles} padding="20px" />
-          </Layout>
-          <Layout>
-            <Text>
-              <Link href="http://www.indeed.com/jobanalytics/jobtrends?q=frontend%2C+backend%2C+full+stack&l=">Indeed</Link>
-            </Text>
-          </Layout>
         </Slide>
 
         {/* npm */}
