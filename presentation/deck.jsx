@@ -42,6 +42,7 @@ const images = _.mapValues({
   broccoli: require("./images/broccoli.png"),
   html: require("./images/html.jpg"),
   tablet: require("./images/tablet.jpg"),
+  thegrid: require("./images/thegrid.png"),
 }, (v) => v.replace("/", ""));
 
 preloader([images.city, images.cheese]);
@@ -518,6 +519,16 @@ export default class extends React.Component {
               Relay/Falcor
             </Heading>
           </Appear>
+        </Slide>
+        <Slide transition={['zoom', 'fade']} bgColor="black" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+          <Heading caps size={1} textColor="tertiary">
+            The Grid
+          </Heading>
+          <Layout>
+            <Link href="https://thegrid.io/">
+              <Image src={images.thegrid} />
+            </Link>
+          </Layout>
         </Slide>
 
         {/* interlude */}
