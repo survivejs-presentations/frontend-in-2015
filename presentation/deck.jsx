@@ -43,6 +43,7 @@ const images = _.mapValues({
   html: require("./images/html.jpg"),
   tablet: require("./images/tablet.jpg"),
   thegrid: require("./images/thegrid.png"),
+  alternative: require("./images/alternative.jpg"),
 }, (v) => v.replace("/", ""));
 
 preloader([images.city, images.cheese]);
@@ -853,6 +854,24 @@ export default class extends React.Component {
             <ListItem><Appear fid="2">JSX support out of box</Appear></ListItem>
             <ListItem><Appear fid="3">Easy to setup</Appear></ListItem>
             <ListItem><Appear fid="4">See also Google Traceur</Appear></ListItem>
+          </List>
+        </Slide>
+
+        {/* altJS */}
+        <Slide transition={["slide", "spin"]} bgColor="primary">
+          <Heading fit size={1} textColor="tertiary">
+            altJS
+          </Heading>
+          <Heading caps size={2} textColor="secondary">
+            Alternatives to Vanilla
+          </Heading>
+        </Slide>
+        <Slide transition={["fade"]} bgColor="secondary" textColor="primary" bgImage={images.alternative} bgDarken={0.75}>
+          <List>
+            <ListItem><Appear fid="1">CoffeeScript</Appear></ListItem>
+            <ListItem><Appear fid="2">TypeScript</Appear></ListItem>
+            <ListItem><Appear fid="3">Flow - Gradual typing</Appear></ListItem>
+            <ListItem><Appear fid="4">And many others</Appear></ListItem>
           </List>
         </Slide>
 
