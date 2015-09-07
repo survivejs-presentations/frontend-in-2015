@@ -11,6 +11,8 @@ import Interactive from "./interactive.jsx";
 import preloader from "../src/utils/preloader";
 import images from "./images";
 
+const BG_OPACITY = 0.6;
+
 preloader([images.city, images.cheese]);
 
 export default class extends React.Component {
@@ -18,7 +20,8 @@ export default class extends React.Component {
     return (
       <Deck transition={["zoom", "slide"]} transitionDuration={800} progress={'bar'}>
         {/* intro */}
-        <Slide transition={["zoom"]} bgColor="primary">
+        <Slide transition={["zoom"]} bgColor="primary"
+          notes="<ul><li>Hello!</li><li>Let's clear the decks!</li></ul>">
           <Heading size={1} fit caps textColor="black">
             Frontend
           </Heading>
@@ -32,7 +35,8 @@ export default class extends React.Component {
             <Text bold caps textColor="tertiary">View on Github</Text>
           </Link>
         </Slide>
-        <Slide transition={["slide"]} bgImage={images.city} bgDarken={0.75}>
+        <Slide transition={["slide"]} bgImage={images.city} bgDarken={BG_OPACITY}
+          notes="<ul><li>Three dimensions</li><li>What to compromise?</li></ul>">
           <Appear fid="1">
             <Heading size={1} caps fit textColor="primary">
               User Experience
@@ -49,13 +53,15 @@ export default class extends React.Component {
             </Heading>
           </Appear>
         </Slide>
-        <Slide transition={["slide"]} bgColor="black">
+        <Slide transition={["slide"]} bgColor="black"
+          notes="<ul><li>JavaScript is not a joke!</li><li>It's the future nobody anticipated.</li></ul>">
           <BlockQuote>
             <Quote>Always bet on JS!</Quote>
             <Cite>Brendan Eich</Cite>
           </BlockQuote>
         </Slide>
-        <Slide transition={["slide"]} bgColor="primary">
+        <Slide transition={["slide"]} bgColor="primary"
+          notes="<ul><li>Increasing usage</li><li>Hard to find sites without any</li></ul>">
           <Heading size={4} caps textColor="secondary" bgColor="white" margin={10}>
             JavaScript Usage
           </Heading>
@@ -99,18 +105,22 @@ export default class extends React.Component {
             </Text>
           </Layout>
         </Slide>
-        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+        <Slide transition={['zoom', 'fade']} bgColor="primary"
+          notes="<ul><li>Popular</li><li>Same goes for AltJS</li></ul>">
           <Layout>
             <Link href="http://redmonk.com/jgovernor/2015/07/31/programming-language-rankings-summer-2015/">
               <Image src={images.redmonk} />
             </Link>
           </Layout>
         </Slide>
-        <Slide transition={['zoom', 'fade']} bgImage={images.html}  notes="<ul><li>talk about that</li><li>and that</li></ul>">
+        <Slide transition={['zoom', 'fade']} bgImage={images.html}
+          notes="<ul><li>In the beginning there was swamp, a HTML editor and John</li><li>And life was simple</li></ul>">
         </Slide>
-        <Slide transition={['zoom', 'fade']} bgImage={images.tablet} notes="<ul><li>talk about that</li><li>and that</li></ul>">
+        <Slide transition={['zoom', 'fade']} bgImage={images.tablet}
+          notes="<ul><li>Now it's not.</li><li>JavaScript is everywhere.</li></ul>">
         </Slide>
-        <Slide transition={["slide"]} bgImage={images.city} bgDarken={0.75}>
+        <Slide transition={["slide"]} bgImage={images.city} bgDarken={BG_OPACITY}
+          notes="<ul><li>Started from inline, got AJAX, SPAs and finally universal JavaScript.</li><li>The pendulum swung back.</li></ul>">
           <Appear fid="1">
             <Heading size={2} caps fit textColor="primary">
               Inline JavaScript
@@ -132,7 +142,8 @@ export default class extends React.Component {
             </Heading>
           </Appear>
         </Slide>
-        <Slide transition={["zoom", "fade"]} bgColor="primary" bgImage={images.cheese} bgDarken={0.75}>
+        <Slide transition={["zoom", "fade"]} bgColor="primary" bgImage={images.cheese} bgDarken={BG_OPACITY}
+          notes="<ul><li>Frameworks or libraries?</li><li>Now that's the question.</li></ul>">
           <Heading caps fit>Pick your poison</Heading>
           <Layout>
             <Fill>
@@ -147,7 +158,8 @@ export default class extends React.Component {
             </Fill>
           </Layout>
         </Slide>
-        <Slide transition={['zoom', 'fade']} bgColor="secondary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+        <Slide transition={['zoom', 'fade']} bgColor="secondary"
+          notes="<ul><li>As it's easier to compare through an example, let's use TodoMVC.</li><li>It's enough.</li></ul>">
           <Layout>
             <Link href="http://todomvc.com/">
               <Image src={images.todomvc} padding="20px"  />
@@ -156,7 +168,8 @@ export default class extends React.Component {
         </Slide>
 
         {/* frameworks */}
-        <Slide transition={["slide", "spin"]} bgColor="primary">
+        <Slide transition={["slide", "spin"]} bgColor="primary"
+          notes="<ul><li>Want to get opinionated?</li><li>Pick a framework.</li></ul>">
           <Heading caps fit size={1} textColor="tertiary">
             Frameworks
           </Heading>
@@ -164,7 +177,8 @@ export default class extends React.Component {
             Swiss knives
           </Heading>
         </Slide>
-        <Slide transition={["slide"]} bgImage={images.city} bgDarken={0.75}>
+        <Slide transition={["slide"]} bgImage={images.city} bgDarken={BG_OPACITY}
+          notes="<ul><li>Plenty to choose from.</li><li>Explosion of alternatives.</li></ul>">
           <Appear fid="1">
             <Heading size={2} caps textColor="primary">
               AngularJS
@@ -196,73 +210,86 @@ export default class extends React.Component {
             </Heading>
           </Appear>
         </Slide>
-        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+        <Slide transition={['zoom', 'fade']} bgColor="primary"
+          notes="<ul><li>Angular 1.0 in 2012</li><li>Directives! Testability. Dependency Injection.</li></ul>">
           <Layout>
             <Image src={images.angular} />
           </Layout>
         </Slide>
-        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+        <Slide transition={['zoom', 'fade']} bgColor="primary"
+          notes="<ul><li>Custom syntax through directives.</li><li>DSL which you develop. Rethinking approach and going towards 2.0.</li></ul>">
           <CodePane
             lang="html"
             source={require("raw!./examples/angular.example")}
             margin="20px auto"/>
         </Slide>
-        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+        <Slide transition={['zoom', 'fade']} bgColor="primary"
+          notes="<ul><li>Ember 1.0 in 2013</li><li>Handlebars? You got it.</li></ul>">
           <Layout>
             <Image src={images.ember} />
           </Layout>
         </Slide>
-        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+        <Slide transition={['zoom', 'fade']} bgColor="primary"
+          notes="<ul><li>Convention over Configuration</li><li>Router and data layer included</li></ul>">
           <CodePane
             lang="handlebars"
             source={require("raw!./examples/ember.example")}
             margin="20px auto"/>
         </Slide>
-        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+        <Slide transition={['zoom', 'fade']} bgColor="primary"
+          notes="<ul><li>A light-weight solution for data management</li><li>Not that opinionated. More of a starting point (Marionette etc.).</li></ul>">
           <Layout>
             <Image src={images.backbone} />
           </Layout>
         </Slide>
-        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+        <Slide transition={['zoom', 'fade']} bgColor="primary"
+          notes="<ul><li>You fill in the blanks.</li><li>Backbone deals just with data.</li></ul>">
           <CodePane
             lang="html"
             source={require("raw!./examples/backbone.example")}
             margin="20px auto"/>
         </Slide>
-        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+        <Slide transition={['zoom', 'fade']} bgColor="primary"
+          notes="<ul><li>MVVM pattern.</li><li>Easy data bindings.</li></ul>">
           <Layout>
             <Image src={images.knockout} />
           </Layout>
         </Slide>
-        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+        <Slide transition={['zoom', 'fade']} bgColor="primary"
+          notes="<ul><li>Lots of bindings!</li><li>ViewModel below.</li></ul>">
           <CodePane
             lang="html"
             source={require("raw!./examples/knockout.example")}
             margin="20px auto"/>
         </Slide>
-        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
-          <Layout>
-            <Image src={images.meteor} />
-          </Layout>
-        </Slide>
-        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
-          <CodePane
-            lang="html"
-            source={require("raw!./examples/meteor.example")}
-            margin="20px auto"/>
-        </Slide>
-        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+        <Slide transition={['zoom', 'fade']} bgColor="primary"
+          notes="<ul><li>A sneak peek at the future?</li><li>Web Components!</li></ul>">
           <Layout>
             <Image src={images.polymer} />
           </Layout>
         </Slide>
-        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+        <Slide transition={['zoom', 'fade']} bgColor="primary"
+          notes="<ul><li>Pushing logic to Web Components.</li><li>The standard approach.</li></ul>">
           <CodePane
             lang="html"
             source={require("raw!./examples/polymer.example")}
             margin="20px auto"/>
         </Slide>
-        <Slide transition={["zoom", "fade"]} bgColor="primary">
+        <Slide transition={['zoom', 'fade']} bgColor="primary"
+          notes="<ul><li>Want both front-end and back-end?</li><li>Try Meteor.</li></ul>">
+          <Layout>
+            <Image src={images.meteor} />
+          </Layout>
+        </Slide>
+        <Slide transition={['zoom', 'fade']} bgColor="primary"
+          notes="<ul><li>Simple view with templating.</li><li>Full, well-funded solution.</li></ul>">
+          <CodePane
+            lang="html"
+            source={require("raw!./examples/meteor.example")}
+            margin="20px auto"/>
+        </Slide>
+        <Slide transition={["zoom", "fade"]} bgColor="primary"
+          notes="<ul><li>Each have their strengths and ecosystem.</li><li>Particularly Angular is popular. Giant compared to the rest.</li></ul>">
           <Heading size={4} caps textColor="secondary" bgColor="white" margin={10}>
             Comparison
           </Heading>
@@ -301,7 +328,8 @@ export default class extends React.Component {
         </Slide>
 
         {/* libraries */}
-        <Slide transition={["slide", "spin"]} bgColor="primary">
+        <Slide transition={["slide", "spin"]} bgColor="primary"
+          notes="<ul><li>Frameworks aren't the only solution</li><li>A library based approach can work as well.</li></ul>">
           <Heading caps fit size={1} textColor="tertiary">
             Libraries
           </Heading>
@@ -309,12 +337,14 @@ export default class extends React.Component {
             For specific problems
           </Heading>
         </Slide>
-        <Slide transition={["slide", "spin"]} bgColor="primary">
+        <Slide transition={["slide", "spin"]} bgColor="primary"
+          notes="<ul><li>There are multiple solutions for the view layer.</li><li>Pick other libraries to complement as needed.</li></ul>">
           <Heading caps fit size={1} textColor="tertiary">
             View Libraries
           </Heading>
         </Slide>
-        <Slide transition={["slide"]} bgImage={images.city} bgDarken={0.75}>
+        <Slide transition={["slide"]} bgImage={images.city} bgDarken={BG_OPACITY}
+          notes="<ul><li>A lot to choose from.</li><li>Same as with frameworks. Too many to learn them all.</li></ul>">
           <Appear fid="1">
             <Heading size={2} caps textColor="primary">
               React.js
@@ -337,16 +367,18 @@ export default class extends React.Component {
           </Appear>
           <Appear fid="5">
             <Heading size={2} caps textColor="primary">
-              + 100 000 more
+              + 1 000 more
             </Heading>
           </Appear>
         </Slide>
-        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+        <Slide transition={['zoom', 'fade']} bgColor="primary"
+          notes="<ul><li>Facebook's React has taken the world by storm.</li><li>It will inspire the next generation of frameworks.</li></ul>">
           <Layout>
             <Image src={images.react} />
           </Layout>
         </Slide>
-        <Slide transition={["zoom", "fade"]} bgColor="primary">
+        <Slide transition={["zoom", "fade"]} bgColor="primary"
+          notes="<ul><li>A growing technology.</li><li>Gets more popular day by day.</li></ul>">
           <Heading size={4} caps textColor="secondary" bgColor="white" margin={10}>
             Overview of React
           </Heading>
@@ -358,58 +390,68 @@ export default class extends React.Component {
             <ListItem><Appear fid="5"><Link href="https://github.com/Yomguithereal/react-blessed">react-blessed</Link></Appear></ListItem>
           </List>
         </Slide>
-        <Slide transition={["slide"]} bgColor="primary">
+        <Slide transition={["slide"]} bgColor="primary"
+          notes="<ul><li>This presentation was made in React.</li><li>Let's count cats.</li></ul>">
           <Heading size={1} caps fit textColor="tertiary">
             Cat Counter
           </Heading>
           <Interactive/>
         </Slide>
-        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+        <Slide transition={['zoom', 'fade']} bgColor="primary"
+          notes="<ul><li>Note JSX (compiled to JS) and how we treat data!</li><li>A step beyond templating. Runtime checks against structure!</li></ul>">
           <CodePane
             lang="javascript"
             source={require("raw!./examples/cat.example")}
             margin="20px auto"/>
         </Slide>
-        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+        <Slide transition={['zoom', 'fade']} bgColor="primary"
+          notes="<ul><li>Note how attributes map to DOM.</li><li>Reads quite well beyond that.</li></ul>">
           <CodePane
             lang="html"
             source={require("raw!./examples/react.example")}
             margin="20px auto"/>
         </Slide>
-        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+        <Slide transition={['zoom', 'fade']} bgColor="primary"
+          notes="<ul><li>Reactive alternative.</li><li>Not as popular, though.</li></ul>">
           <Layout>
             <Image src={images.vue} />
           </Layout>
         </Slide>
-        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+        <Slide transition={['zoom', 'fade']} bgColor="primary"
+          notes="<ul><li>See 'v-' prefix</li><li>Reminds me of something.</li></ul>">
           <CodePane
             lang="html"
             source={require("raw!./examples/vue.example")}
             margin="20px auto"/>
         </Slide>
-        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+        <Slide transition={['zoom', 'fade']} bgColor="primary"
+          notes="<ul><li>More templating!</li></ul>">
           <Layout>
             <Image src={images.ractive} />
           </Layout>
         </Slide>
-        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+        <Slide transition={['zoom', 'fade']} bgColor="primary"
+          notes="<ul><li>Similar ideas as before./li></ul>">
           <CodePane
             lang="html"
             source={require("raw!./examples/ractive.example")}
             margin="20px auto"/>
         </Slide>
-        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+        <Slide transition={['zoom', 'fade']} bgColor="primary"
+          notes="<ul><li>Up and coming alternative.</li><li>human(), computer()</li></ul>">
           <Layout>
             <Image src={images.cycle} />
           </Layout>
         </Slide>
-        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+        <Slide transition={['zoom', 'fade']} bgColor="primary"
+          notes="<ul><li>Reactive flow.</li><li>The next step from React?</li></ul>">
           <CodePane
             lang="javascript"
             source={require("raw!./examples/cycle.example")}
             margin="20px auto"/>
         </Slide>
-        <Slide transition={["zoom", "fade"]} bgColor="primary">
+        <Slide transition={["zoom", "fade"]} bgColor="primary"
+          notes="<ul><li>Many alternatives. React stands out. See also Riot.</li></ul>">
           <Heading size={4} caps textColor="secondary" bgColor="white" margin={10}>
             Comparison
           </Heading>
@@ -438,12 +480,14 @@ export default class extends React.Component {
             </Table>
           </Layout>
         </Slide>
-        <Slide transition={["slide", "spin"]} bgColor="primary">
+        <Slide transition={["slide", "spin"]} bgColor="primary"
+          notes="<ul><li>With libraries you are building it bit by bit. Another part, router.</li></ul>">
           <Heading caps fit size={1} textColor="tertiary">
             Routers
           </Heading>
         </Slide>
-        <Slide transition={["zoom", "fade"]} bgColor="primary">
+        <Slide transition={["zoom", "fade"]} bgColor="primary"
+          notes="<ul><li>Again, a lot to choose from.</li></ul>">
           <Heading size={4} caps textColor="secondary" bgColor="white" margin={10}>
             Routers
           </Heading>
@@ -456,7 +500,8 @@ export default class extends React.Component {
         </Slide>
 
         {/* jobs (usage) */}
-        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+        <Slide transition={['zoom', 'fade']} bgColor="primary"
+          notes="<ul><li>Angular dominates the work market.</li><li>Early signs of React.</li></ul>">
           <Heading size={1} textColor="tertiary">
             Job Trends
           </Heading>
@@ -469,7 +514,8 @@ export default class extends React.Component {
             </Text>
           </Layout>
         </Slide>
-        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+        <Slide transition={['zoom', 'fade']} bgColor="primary"
+          notes="<ul><li>Also job titles change.</li><li>Increasing demand for full stack developers.</li></ul>">
           <Heading size={1} textColor="tertiary">
             Job Trends II
           </Heading>
@@ -484,7 +530,8 @@ export default class extends React.Component {
         </Slide>
 
         {/* architecture */}
-        <Slide transition={["slide", "spin"]} bgColor="primary">
+        <Slide transition={["slide", "spin"]} bgColor="primary"
+          notes="<ul><li>What's modern frontend architecture like?</li></ul>">
           <Heading caps fit size={1} textColor="tertiary">
             Architecture
           </Heading>
@@ -492,7 +539,8 @@ export default class extends React.Component {
             The Art of Wasting Space
           </Heading>
         </Slide>
-        <Slide transition={["slide"]} bgImage={images.city} bgDarken={0.75}>
+        <Slide transition={["slide"]} bgImage={images.city} bgDarken={BG_OPACITY}
+          notes="<ul><li>Started from static sites, went to dynamic, RESTful, app specific.</li><li>Earlier solutions are relevant still but the future is more custom.</li></ul>">
           <Appear fid="1">
             <Heading size={2} caps textColor="primary">
               Static Sites
@@ -514,7 +562,8 @@ export default class extends React.Component {
             </Heading>
           </Appear>
         </Slide>
-        <Slide transition={['zoom', 'fade']} bgColor="black" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+        <Slide transition={['zoom', 'fade']} bgColor="black"
+          notes="<ul><li>Let's leave site design to AI?</li><li>Why not? Easier to optimize.</li></ul>">
           <Heading caps size={1} textColor="tertiary">
             The Grid
           </Heading>
@@ -526,7 +575,8 @@ export default class extends React.Component {
         </Slide>
 
         {/* interlude */}
-        <Slide transition={["slide"]} bgColor="black">
+        <Slide transition={["slide"]} bgColor="black"
+          notes="<ul><li>In the end it's about making good decisions based on constraints.</li></ul>">
           <BlockQuote>
             <Quote>Design is the beauty of turning constraints into advantages</Quote>
             <Cite>Aza Raskin</Cite>
@@ -534,7 +584,8 @@ export default class extends React.Component {
         </Slide>
 
         {/* npm */}
-        <Slide transition={["slide", "spin"]} bgColor="primary">
+        <Slide transition={["slide", "spin"]} bgColor="primary"
+          notes="<ul><li>Need package management? Leave it to npm.</li></ul>">
           <Heading fit size={1} textColor="tertiary">
             npm
           </Heading>
@@ -542,7 +593,8 @@ export default class extends React.Component {
             For keeping things together
           </Heading>
         </Slide>
-        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+        <Slide transition={['zoom', 'fade']} bgColor="primary"
+          notes="<ul><li>Amazing growth rate.</li><li>At this rate bigger than others combined.</li></ul>">
           <Heading size={1} textColor="tertiary">
             Module Counts
           </Heading>
@@ -555,15 +607,17 @@ export default class extends React.Component {
             </Text>
           </Layout>
         </Slide>
-        <Slide transition={["fade"]} textColor="primary" bgImage={images.boxing} bgDarken={0.75}>
+        <Slide transition={["fade"]} textColor="primary" bgImage={images.boxing} bgDarken={BG_OPACITY}
+          notes="<ul><li>For both frontend and backend?</li><li>No reason not to use.</li></ul>">
           <List>
-            <ListItem><Appear fid="1">176k+ packages and growing fast</Appear></ListItem>
+            <ListItem><Appear fid="1">182k+ packages and growing fast</Appear></ListItem>
             <ListItem><Appear fid="2">Dependency management</Appear></ListItem>
             <ListItem><Appear fid="3">Package authoring</Appear></ListItem>
             <ListItem><Appear fid="4">Both frontend/backend</Appear></ListItem>
           </List>
         </Slide>
-        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+        <Slide transition={['zoom', 'fade']} bgColor="primary"
+          notes="<ul><li>Relies on package.json.</li><li>Useful for running tasks as well.</li></ul>">
           <Heading size={1} textColor="tertiary">
             package.json
           </Heading>
@@ -574,7 +628,8 @@ export default class extends React.Component {
         </Slide>
 
         {/* build tools */}
-        <Slide transition={["slide", "spin"]} bgColor="primary">
+        <Slide transition={["slide", "spin"]} bgColor="primary"
+          notes="<ul><li>Getting something visible to the client is important. Hence build tools are needed.</li></ul>">
           <Heading caps fit size={1} textColor="tertiary">
             Build Tools
           </Heading>
@@ -582,7 +637,8 @@ export default class extends React.Component {
             Hard to live without
           </Heading>
         </Slide>
-        <Slide transition={["zoom", "fade"]} bgColor="primary">
+        <Slide transition={["zoom", "fade"]} bgColor="primary"
+          notes="<ul><li>Split based on generations. From task runners to bundlers.</li></ul>">
           <Layout>
             <Fill>
               <Heading size={4} caps textColor="secondary" bgColor="white" margin={10}>
@@ -614,12 +670,14 @@ export default class extends React.Component {
             </Fill>
           </Layout>
         </Slide>
-        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+        <Slide transition={['zoom', 'fade']} bgColor="primary"
+          notes="<ul><li>The classic starting point.</li></ul>">
           <Heading caps size={1} textColor="tertiary">
             Make
           </Heading>
         </Slide>
-        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+        <Slide transition={['zoom', 'fade']} bgColor="primary"
+          notes="<ul><li>Still valid.</li></ul>">
           <CodePane
             lang="html"
             source={require("raw!./examples/make.example")}
@@ -630,12 +688,14 @@ export default class extends React.Component {
             </Text>
           </Layout>
         </Slide>
-        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+        <Slide transition={['zoom', 'fade']} bgColor="primary"
+          notes="<ul><li>Very popular for a while due to plugins.</li><li>Gruntfiles became difficult to maintain.</li></ul>">
           <Layout>
             <Image src={images.grunt} />
           </Layout>
         </Slide>
-        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+        <Slide transition={['zoom', 'fade']} bgColor="primary"
+          notes="<ul><li>Plugins!</li><li>But they hide the complexity making Gruntfiles difficult to maintain.</li></ul>">
           <CodePane
             lang="javascript"
             source={require("raw!./examples/grunt.example")}
@@ -646,12 +706,14 @@ export default class extends React.Component {
             </Text>
           </Layout>
         </Slide>
-        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+        <Slide transition={['zoom', 'fade']} bgColor="primary"
+          notes="<ul><li>The next step.</li><li>Streaming alternative. More power.</li></ul>">
           <Layout>
             <Image src={images.gulp} />
           </Layout>
         </Slide>
-        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+        <Slide transition={['zoom', 'fade']} bgColor="primary"
+          notes="<ul><li>Streams in action.</li><li>A step towards something better even if some manual work is required.</li></ul>">
           <CodePane
             lang="javascript"
             source={require("raw!./examples/gulp.example")}
@@ -662,12 +724,14 @@ export default class extends React.Component {
             </Text>
           </Layout>
         </Slide>
-        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+        <Slide transition={['zoom', 'fade']} bgColor="primary"
+          notes="<ul><li>Niche alternative</li><li>Instead of pipes/sink we have trees.</li></ul>">
           <Layout>
             <Image src={images.broccoli} />
           </Layout>
         </Slide>
-        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+        <Slide transition={['zoom', 'fade']} bgColor="primary"
+          notes="<ul><li>You build trees.</li><li>And operate based on those.</li></ul>">
           <CodePane
             lang="javascript"
             source={require("raw!./examples/broccoli.example")}
@@ -678,34 +742,40 @@ export default class extends React.Component {
             </Text>
           </Layout>
         </Slide>
-        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+        <Slide transition={['zoom', 'fade']} bgColor="primary"
+          notes="<ul><li>Modular bundler based on NPM.</li><li>Lots of small tools.</li></ul>">
           <Layout>
             <Image src={images.browserify} />
           </Layout>
         </Slide>
-        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+        <Slide transition={['zoom', 'fade']} bgColor="primary"
+          notes="<ul><li>Just this. Pipe together to build what you need.</li></ul>">
           <CodePane
             lang="html"
             source={require("raw!./examples/browserify.example")}
             margin="20px auto"/>
         </Slide>
-        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+        <Slide transition={['zoom', 'fade']} bgColor="primary"
+          notes="<ul><li>Configuration driven approach.</li><li>Hard to pick up but powerful.</li></ul>">
           <Layout>
             <Image src={images.webpack} />
           </Layout>
         </Slide>
-        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+        <Slide transition={['zoom', 'fade']} bgColor="primary"
+          notes="<ul><li>Input, output, module loaders, plugins.</li></ul>">
           <CodePane
             lang="javascript"
             source={require("raw!./examples/webpack.example")}
             margin="20px auto"/>
         </Slide>
-        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+        <Slide transition={['zoom', 'fade']} bgColor="primary"
+          notes="<ul><li>Push it all to browser!</li><li>The next big thing?</li></ul>">
           <Layout>
             <Image src={images.jspm} />
           </Layout>
         </Slide>
-        <Slide transition={['zoom', 'fade']} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+        <Slide transition={['zoom', 'fade']} bgColor="primary"
+          notes="<ul><li>Based on SystemJS module loader.</li><li>Still developing and in some ways immature.</li></ul>">
           <CodePane
             lang="html"
             source={require("raw!./examples/jspm.example")}
@@ -724,7 +794,8 @@ export default class extends React.Component {
         </Slide>
 
         {/* productivity tools */}
-        <Slide transition={["slide", "spin"]} bgColor="primary">
+        <Slide transition={["slide", "spin"]} bgColor="primary"
+          notes="<ul><li>Not just ctrl-r anymore</li></ul>">
           <Heading caps fit size={1} textColor="tertiary">
             Productivity
           </Heading>
@@ -732,7 +803,8 @@ export default class extends React.Component {
             For fun and profit
           </Heading>
         </Slide>
-        <Slide transition={["zoom", "fade"]} bgColor="primary">
+        <Slide transition={["zoom", "fade"]} bgColor="primary"
+          notes="<ul><li>Pushing towards better tooling (time travel!).</li></ul>">
           <Layout>
             <Fill>
               <Heading size={4} caps textColor="secondary" bgColor="white" margin={10}>
@@ -764,7 +836,8 @@ export default class extends React.Component {
         </Slide>
 
         {/* css processors */}
-        <Slide transition={["slide", "spin"]} bgColor="primary">
+        <Slide transition={["slide", "spin"]} bgColor="primary"
+          notes="<ul><li>Vanilla CSS gets you only so far.</li></ul>">
           <Heading caps fit size={1} textColor="tertiary">
             CSS Processors
           </Heading>
@@ -772,19 +845,23 @@ export default class extends React.Component {
             Because Vanilla Isn't Enough
           </Heading>
         </Slide>
-        <Slide transition={["slide"]} bgColor="primary" bgImage={images.style} bgDarken={0.75}>
+        <Slide transition={["slide"]} bgColor="primary" bgImage={images.style} bgDarken={BG_OPACITY}
+          notes="<ul><li>Solving CSS through conventions.</li></ul>">
           <Heading caps >BEM, OOCSS, SMACSS</Heading>
           <Heading caps size={2} textColor="primary">Solving CSS within CSS</Heading>
         </Slide>
-        <Slide transition={["slide"]} bgColor="primary" bgImage={images.style} bgDarken={0.75}>
+        <Slide transition={["slide"]} bgColor="primary" bgImage={images.style} bgDarken={BG_OPACITY}
+          notes="<ul><li>Solving CSS through better languages.</li></ul>">
           <Heading caps >SASS, Less, Stylus</Heading>
           <Heading caps size={2} textColor="primary">Better languages</Heading>
         </Slide>
-        <Slide transition={["slide"]} bgColor="primary" bgImage={images.style} bgDarken={0.75}>
+        <Slide transition={["slide"]} bgColor="primary" bgImage={images.style} bgDarken={BG_OPACITY}
+          notes="<ul><li>Solving CSS through plugins (new features as needed!).</li></ul>">
           <Heading caps >PostCSS, cssnext</Heading>
           <Heading caps size={2} textColor="primary">Extensions</Heading>
         </Slide>
-        <Slide transition={["slide"]} bgColor="primary" notes="<ul><li>talk about that</li><li>and that</li></ul>">
+        <Slide transition={["slide"]} bgColor="primary"
+          notes="<ul><li>Hard to separate preprocessors from postprocessors, better talk about processors.</li></ul>">
           <Layout>
             <Image src={images.cssProcessors} padding="20px" />
           </Layout>
@@ -794,17 +871,20 @@ export default class extends React.Component {
             </Text>
           </Layout>
         </Slide>
-        <Slide transition={["slide"]} bgColor="primary" bgImage={images.style} bgDarken={0.75}>
+        <Slide transition={["slide"]} bgColor="primary" bgImage={images.style} bgDarken={BG_OPACITY}
+          notes="<ul><li>Going inline was a fad (still?) in React circles</li></ul>">
           <Heading caps >Inline CSS (React)</Heading>
           <Heading caps size={2} textColor="primary">Back to the future?</Heading>
         </Slide>
-        <Slide transition={["slide"]} bgColor="primary" bgImage={images.style} bgDarken={0.75}>
+        <Slide transition={["slide"]} bgColor="primary" bgImage={images.style} bgDarken={BG_OPACITY}
+          notes="<ul><li>Going local by default might be a better idea. Composition works as well!</li></ul>">
           <Heading caps >CSS Modules</Heading>
           <Heading caps size={2} textColor="primary">Eliminates globals, modularity++</Heading>
         </Slide>
 
         {/* javascript */}
-        <Slide transition={["slide", "spin"]} bgColor="primary">
+        <Slide transition={["slide", "spin"]} bgColor="primary"
+          notes="<ul><li>JavaScript will never be the same again.</li></ul>">
           <Heading caps fit size={1} textColor="tertiary">
             ES2015, ES2016, ...
           </Heading>
@@ -812,21 +892,24 @@ export default class extends React.Component {
             Version per year
           </Heading>
         </Slide>
-        <Slide transition={["zoom", "fade"]} bgColor="secondary">
+        <Slide transition={["zoom", "fade"]} bgColor="secondary"
+          notes="<ul><li>Get future now through Babel.</li></ul>">
           <Heading caps >Babel</Heading>
           <Heading caps size={2} textColor="primary">The Future Now</Heading>
         </Slide>
-        <Slide transition={["fade"]} bgColor="secondary" textColor="primary" bgImage={images.babel} bgDarken={0.75}>
+        <Slide transition={["fade"]} bgColor="secondary" textColor="primary" bgImage={images.babel} bgDarken={BG_OPACITY}
+          notes="<ul><li>Tons of features, JSX out of box, easy to set up.</li></ul>">
           <List>
             <ListItem><Appear fid="1">JavaScript compiler</Appear></ListItem>
             <ListItem><Appear fid="2">JSX support out of box</Appear></ListItem>
-            <ListItem><Appear fid="3">Easy to setup</Appear></ListItem>
+            <ListItem><Appear fid="3">Easy to set up</Appear></ListItem>
             <ListItem><Appear fid="4">See also Google Traceur</Appear></ListItem>
           </List>
         </Slide>
 
         {/* altJS */}
-        <Slide transition={["slide", "spin"]} bgColor="primary">
+        <Slide transition={["slide", "spin"]} bgColor="primary"
+          notes="<ul><li>Not just vanilla.</li></ul>">
           <Heading fit size={1} textColor="tertiary">
             altJS
           </Heading>
@@ -834,7 +917,8 @@ export default class extends React.Component {
             Alternatives to Vanilla
           </Heading>
         </Slide>
-        <Slide transition={["fade"]} bgColor="secondary" textColor="primary" bgImage={images.alternative} bgDarken={0.75}>
+        <Slide transition={["fade"]} bgColor="secondary" textColor="primary" bgImage={images.alternative} bgDarken={BG_OPACITY}
+          notes="<ul><li>More opinionated in some ways (writeability, typing, features).</li></ul>">
           <List>
             <ListItem><Appear fid="1">CoffeeScript</Appear></ListItem>
             <ListItem><Appear fid="2">TypeScript</Appear></ListItem>
@@ -844,7 +928,8 @@ export default class extends React.Component {
         </Slide>
 
         {/* linting */}
-        <Slide transition={["slide", "spin"]} bgColor="primary">
+        <Slide transition={["slide", "spin"]} bgColor="primary"
+          notes="<ul><li>Catch potential problems before they become serious.</li></ul>">
           <Heading caps fit size={1} textColor="tertiary">
             Linting
           </Heading>
@@ -852,17 +937,20 @@ export default class extends React.Component {
             To keep bugs at bay
           </Heading>
         </Slide>
-        <Slide transition={["slide"]} bgColor="primary" bgImage={images.lint} bgDarken={0.75}>
+        <Slide transition={["slide"]} bgColor="primary" bgImage={images.lint} bgDarken={BG_OPACITY}
+          notes="<ul><li>Choose/build the rules/reporters you need. Autofixing!</li></ul>">
           <Heading caps >ESLint</Heading>
           <Heading caps size={2} textColor="primary">Pluggable linting for JavaScript</Heading>
         </Slide>
-        <Slide transition={["slide"]} bgColor="primary" bgImage={images.lint} bgDarken={0.75}>
+        <Slide transition={["slide"]} bgColor="primary" bgImage={images.lint} bgDarken={BG_OPACITY}
+          notes="<ul><li>Catch common CSS gotchas!</li></ul>">
           <Heading caps >csslint</Heading>
           <Heading caps size={2} textColor="primary">Rules for improving your CSS</Heading>
         </Slide>
 
         {/* testing */}
-        <Slide transition={["slide", "spin"]} bgColor="primary">
+        <Slide transition={["slide", "spin"]} bgColor="primary"
+          notes="<ul><li>How to know something truly works or didn't got broken?</li></ul>">
           <Heading caps fit size={1} textColor="tertiary">
             Testing
           </Heading>
@@ -870,7 +958,8 @@ export default class extends React.Component {
             To make things work for sure
           </Heading>
         </Slide>
-        <Slide transition={["slide"]} bgImage={images.city} bgDarken={0.75}>
+        <Slide transition={["slide"]} bgImage={images.city} bgDarken={BG_OPACITY}
+          notes="<ul><li>Plenty of tools for different levels of testing.</li></ul>">
           <Appear fid="1">
             <Heading size={2} caps textColor="primary">
               Selenium
@@ -899,7 +988,8 @@ export default class extends React.Component {
         </Slide>
 
         {/* web components */}
-        <Slide transition={["slide", "spin"]} bgColor="primary">
+        <Slide transition={["slide", "spin"]} bgColor="primary"
+          notes="<ul><li>Future is component oriented?</li></ul>">
           <Heading caps fit size={1} textColor="tertiary">
             Web Components
           </Heading>
@@ -907,16 +997,18 @@ export default class extends React.Component {
             The Future?
           </Heading>
         </Slide>
-        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
+        <Slide transition={["fade"]} bgColor="secondary" textColor="primary"
+          notes="<ul><li>Better collaboration! Now too fragmented.</li></ul>">
           <List>
             <ListItem><Appear fid="1">Fragmentation (Bootstrap for AngularJS, Ember, React, ...)</Appear></ListItem>
-            <ListItem><Appear fid="2">What if there was only one canonical version?</Appear></ListItem>
+            <ListItem><Appear fid="2">What if there was only one canonical version of libraries?</Appear></ListItem>
             <ListItem><Appear fid="3">Improved reuse, sharing across projects, less waste</Appear></ListItem>
           </List>
         </Slide>
 
         {/* conclusion */}
-        <Slide transition={["slide", "spin"]} bgColor="primary">
+        <Slide transition={["slide", "spin"]} bgColor="primary"
+          notes="<ul><li>To conclude all this.</li></ul>">
           <Heading caps fit size={1} textColor="tertiary">
             Conclusion
           </Heading>
@@ -924,7 +1016,8 @@ export default class extends React.Component {
             To recap
           </Heading>
         </Slide>
-        <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
+        <Slide transition={["fade"]} bgColor="secondary" textColor="primary"
+          notes="<ul><li>Nothing ever remains the same. Esp. in frontend.</li></ul>">
           <List>
             <ListItem><Appear fid="1">Prepare to clear the decks often</Appear></ListItem>
             <ListItem><Appear fid="2">A lot to learn but focus pays off</Appear></ListItem>
