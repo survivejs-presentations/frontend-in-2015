@@ -1,5 +1,4 @@
 import React from "react/addons";
-import _ from "lodash";
 
 import {
   Appear, BlockQuote, Cite, CodePane, Deck, Fill,
@@ -10,41 +9,7 @@ import {
 import Interactive from "./interactive.jsx";
 
 import preloader from "../src/utils/preloader";
-
-const images = _.mapValues({
-  city: require("./images/city.jpg"),
-  cheese: require("./images/cheese.jpg"),
-  boxing: require("./images/boxing.jpg"),
-  babel: require("./images/babel.jpg"),
-  lint: require("./images/lint.jpg"),
-  style: require("./images/style.jpg"),
-  jobs: require("./images/jobs.png"),
-  redmonk: require("./images/redmonk.png"),
-  moduleCounts: require("./images/module_counts.png"),
-  todomvc: require("./images/todomvc.png"),
-  browserify: require("./images/browserify.png"),
-  grunt: require("./images/grunt.png"),
-  gulp: require("./images/gulp.png"),
-  jspm: require("./images/jspm.png"),
-  webpack: require("./images/webpack.png"),
-  react: require("./images/react.png"),
-  angular: require("./images/angular.png"),
-  backbone: require("./images/backbone.png"),
-  cycle: require("./images/cycle.png"),
-  ember: require("./images/ember.png"),
-  knockout: require("./images/knockout.png"),
-  meteor: require("./images/meteor.png"),
-  ractive: require("./images/ractive.png"),
-  vue: require("./images/vue.png"),
-  cssProcessors: require("./images/css_processors.jpg"),
-  polymer: require("./images/polymer.png"),
-  jobTitles: require("./images/jobtitles.png"),
-  broccoli: require("./images/broccoli.png"),
-  html: require("./images/html.jpg"),
-  tablet: require("./images/tablet.jpg"),
-  thegrid: require("./images/thegrid.png"),
-  alternative: require("./images/alternative.jpg"),
-}, (v) => v.replace("/", ""));
+import images from "./images";
 
 preloader([images.city, images.cheese]);
 
