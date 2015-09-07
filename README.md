@@ -6,6 +6,13 @@ As I'm sure I'm missing some trends please [create issues for me to study](https
 
 The presentation is based on [Spectacle](https://github.com/FormidableLabs/spectacle).
 
+## Presenting
+
+1. `npm start`
+2. `http://localhost:3000/#/?presenter` - Presenter view
+3. `http://localhost:3000/#` - Presentation view synced with presenter view
+4. Good luck!
+
 ## License
 
 MIT. See *LICENSE*.
